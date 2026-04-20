@@ -1,0 +1,54 @@
+(KALEI_MON_255) In Conversation With Jensen Huang
+Mon, Apr 6, 2026
+
+Summary:
+
+The meeting examined how enterprises should approach AI adoption, weighing broad experimentation against concentrated investment in high-impact domains such as coding, chip design, and supply chain management. Participants agreed leaders should set vision and inspire experimentation rather than prescribe exact uses, and that maintaining many exploratory projects is appropriate because breakthroughs are difficult to plan or measure in advance.
+
+The discussion expanded AI beyond large language models to a spectrum of specialized and multimodal models that encode domain structure in areas like genes, proteins, and physics. Participant 1 described AI’s progression from generative models to grounded reasoning systems and now to agentic, long-running systems capable of end-to-end task execution, and warned that rapid adoption will place pressure on application layers and data centers, requiring energy- and architecture-conscious design.
+
+
+Chapters & Topics:
+
+Experimentation versus focus in enterprise AI
+The meeting opened with Participant 2 expressing concern about being underprepared and asking how enterprises should balance broad experimentation versus selective funding for AI initiatives. Participant 1 recommended allowing many experiments while concentrating resources on areas with strategic importance such as coding and chip design.
+* Leaders should allow broad experimentation with AI while prioritizing focused effort in strategic domains like chip design and supply chain
+
+Expanding the definition of AI beyond LLMs
+Participant 2 asked what leaders miss if they equate AI with generative models, and Participant 1 described a wide taxonomy of models including multimodal and domain-specific systems for proteins, chemistry, and physics. The discussion emphasized that AI aims to represent structured domain information wherever it exists.
+* AI encompasses many model types beyond LLMs, including domain-specific and physics-aware models
+
+Purpose of AI and the value of prediction and reasoning
+Participant 1 framed AI as software for prediction, reasoning, and understanding across domains, giving examples from protein interactions to robotic behavior. The point was made that prediction and representation are fundamentally valuable across scientific and engineering tasks.
+* Failure and exploratory work are valuable data points and cannot always be measured by immediate ROI
+
+The three waves of modern AI and the rise of agentic systems
+The speakers reviewed AI’s evolution from generative models to more grounded, reasoning systems and described a current third wave in which models can execute tasks and use tools autonomously. Participant 1 explained how agentic systems can connect to file systems, tools, and iterate toward solutions.
+* AI capabilities have progressed from generative outputs to grounded reasoning to agentic systems that can perform end-to-end work
+
+Industry impact, stack stress, and IT reinvention
+The conversation covered how soon non-technical leaders might task AI to execute end-to-end work and concluded that such capability could be close, within a year or two for many tasks. The speakers argued the application layer will be most impacted and predicted a major reinvention and growth in IT tools as billions of AI agents become tool users.
+* The most stressed layer of the AI stack will be applications, which will drive a large phase of IT tool growth
+
+Energy constraints and closing remarks
+The meeting ended with a focus on energy as a key constraint, with Participant 1 stressing the need for architectures optimized for tokens-per-watt and co-design to ensure energy translates to customer value. The conversation closed with appreciation and a commitment to meet again next year.
+* Energy efficiency and architecture co-design in data centers are critical as AI tool usage scales massively
+
+
+Action Items:
+
+* Participant 1 will meet with Participant 2 next year
+
+
+Key Questions:
+
+* What does it look like if an enterprise has budget for a few prioritized AI projects versus funding many small experiments?
+* What are leaders and builders missing if they think AI is just generative (Gen AI)?
+* Can you name a surprising enterprise use case seen recently?
+* How many years until a non-technical CEO can describe a business problem and have AI execute it end-to-end?
+* Which layer of the AI stack is most likely to see stress first?
+
+
+Notepad:
+
+* No notes

@@ -1,0 +1,80 @@
+(KALEI_MON_FD2) AI is a 5 Layer Cake - Featuring: Denis Yarats (Perplexity), Bryan Catanzaro (NVIDIA), Lin Qiao (Fireworks AI), Stefan Weitz (HumanX)
+Mon, Apr 6, 2026
+
+Summary:
+
+The meeting examined how growth in pre-training, post-training, deployment compute cycles, and agents is increasing demand for compute and making power efficiency a central design constraint. Speakers described NVIDIA’s co-design approach that spans transistors, compilers, libraries, and systems, and referenced Nemotron as a public-facing learning project used to guide future hardware and software decisions. The group flagged timing and design risks in hardware development and recommended close ecosystem co-design to mitigate those risks.
+
+Discussion moved to inference and deployment, where Fireworks AI positioned itself as an inference-first platform optimizing quality, latency, and cost for production models and emphasized matching models to the best chips and activating private enterprise data as the primary product moat. Participants debated imbalance across the AI stack, urged more product-focused applications that integrate models into workflows, and observed that token costs and compute inefficiencies should fall as layers mature. In a rapid segment the panel concluded that model capability, inference efficiency, and product usefulness are interdependent, shifting in priority from early product-market-fit to scale, and warned against over-optimizing for current model capabilities instead of preparing for the next 6–12 months.
+
+
+Chapters & Topics:
+
+Opening banter and framing
+The session begins with informal backstage remarks and transitions quickly to a framing question about early AI-era approaches that used brute-force compute and whether that strategy remains dominant. The host sets up the central theme of how the compute–intelligence relationship has evolved.
+
+Compute, scaling laws, and NVIDIA’s co-design
+NVIDIA’s representative outlines four scaling drivers—pre-training, post-training, deployment thinking cycles, and agents—and argues that compute and intelligence are equivalent, which makes efficiency crucial under societal compute constraints. He describes NVIDIA’s long-term co-design across the stack (transistors to frameworks), the need for specialization, and Nemotron’s role in informing future system designs and public releases.
+* Compute continues to drive intelligence through four scaling mechanisms: pre-training, post-training, deployment compute, and agents
+* NVIDIA uses Nemotron to learn about AI requirements and to inform future system design while also releasing models publicly
+
+Hardware design constraints and decision processes
+The discussion addresses power efficiency as a central constraint in chip design and the difficulty of choosing a single design direction amid fast-moving AI paradigms. NVIDIA explains its reliance on modeling, simulation, partner input, and internal projects to mitigate the risk of committing to a design that the industry might not adopt.
+* Power efficiency is a primary constraint and design focus for NVIDIA’s accelerated computing work
+* Co-design with the broader ecosystem helps align what wins in practice and reduces the risk of designing systems that are incompatible with common AI approaches
+
+Transition to inference and Fireworks AI introduction
+The conversation moves from chips to production deployment, introducing Lin Qiao of Fireworks AI and framing inference, latency, cost, and quality as the three dimensions Fireworks optimizes for production models. Fireworks positions itself as inference-first while also preparing to announce a next-generation training platform and emphasizing developer needs for rapid scaling.
+* Fireworks AI is positioned as a frontier inference platform that optimizes quality, latency, and cost simultaneously for production deployments
+
+Inference complexity, developer needs, and moats
+Fireworks details rising model complexity (mixtures of experts and growing layer/expert counts), the operational burden on developers to match models to chips, and the need to scale quickly for product-market fit. The discussion concludes by asserting that private enterprise data—currently under-activated—is the durable moat that will make per-application models unique and valuable.
+* Model architecture complexity and rapid hardware iteration create significant operational overhead for developers deploying state-of-the-art models
+* The unique private data companies collect represents the strongest long-term moat for AI applications, not public foundation-model data
+
+Panel introduction and provocations
+The moderator transitioned the session into a panel discussion and invited controversy about stack investment and balance, asking whether the group is over- or under-investing across the five layers. The moderator encouraged candid responses and signaled a more dynamic format for the panel segment.
+* The panel questioned whether the AI stack is balanced and whether some layers are under-invested
+
+Demand for AI applications and early-stage landscape
+Panelists emphasized the need for more AI applications, citing Perplexity as an example of an application that meaningfully enhances user experience beyond conversational chat. Speakers framed the field as early in an S-curve with multiple layers—from applications to chips and supply chains—expecting cost reductions in token pricing and broader accessibility over time.
+* Panelists called for many more AI applications that change user experience rather than just conversational interfaces
+* The industry is still early on the AI S-curve, with many layers from apps to chips yet to optimize together
+
+Infrastructure and compute requirements
+The conversation moved to concrete infrastructure needs, with panelists requesting more compute capacity that is cheaper, faster, and lower-latency and describing background, always-on AI as a future compute consumer. Participants also raised privacy concerns and recommended hybrid approaches including privacy-preserved server-side serving and local inference on GPUs for sensitive workloads.
+* Infrastructure needs include substantially more compute that is cheaper, faster, and better
+* Privacy-preserving serving and local inference on devices were identified as important needs for private data use cases
+
+Design trade-offs and co-design across layers
+Panelists discussed designing products with current and future model capabilities in mind, balancing context window limits, latency, cost, and model choice by sub-task to optimize overall system performance. The group framed this co-design approach as central to being AI-native and achieving practical, cost-effective products.
+
+Bottlenecks, lifecycle priorities, and wasted effort
+In a speed round, participants argued that model capability, inference efficiency, and product usefulness are interconnected bottlenecks and that teams must push on all fronts simultaneously. It was noted that model quality matters most before product-market-fit while efficiency and cost dominate after scale, and that over-optimizing for current model capabilities risks wasted effort as models evolve quickly.
+* Model quality is the dominant bottleneck during product-market-fit, while infrastructure efficiency becomes the bottleneck after product-market-fit
+
+Closing transition to next topic
+The moderator wrapped the panel due to time, thanked speakers and Jensen for opening the session, and introduced an upcoming conversation about moving beyond language models toward spatial intelligence and AI that perceives, reasons, and acts in physical and virtual environments.
+
+
+Action Items:
+
+* No action items generated
+
+
+Key Questions:
+
+* How has the early approach of "throw more compute at it" changed and where does the field sit on that spectrum?
+* How do you design hardware for a rapidly changing software landscape when models evolve faster than chips?
+* How far ahead can you design chips for workloads that do not yet exist, and how do you avoid choosing the wrong direction?
+* What does AI infrastructure mean in 2026 given growing model and deployment complexity?
+* Was Fireworks’ early focus on inference a strategic anticipation of market needs or customer demand?
+* Are we building a balanced stack right now, or are we over-investing in certain layers?
+* What do you need from the infrastructure and chip layer that you do not have today?
+* Which is the biggest bottleneck right now: model capability, inference efficiency, or product usefulness?
+* What is the most wasted effort across the stack likely to be in 12 months?
+
+
+Notepad:
+
+* No notes

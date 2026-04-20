@@ -1,0 +1,51 @@
+(LOOPT_THU_391) Training Taste: How AI Is Learning What Shoppers Actually Want - Featuring: Julie Bornstein (Daydream), Purva Gupta (Lily AI)
+Thu, Apr 9, 2026
+
+Summary:
+
+The meeting introduced two retail AI leaders to examine how AI can learn and surface human taste, with a focus on fashion and product discovery. The moderator framed the core problem as a persistent mismatch between how merchants describe products and what customers mean or intend when they search, and emphasized that nuance, context, and emotion are central challenges for commerce AI. Julie Bornstein presented Daydream’s conversational and image-based recommendation approach, arguing that images and rich contextual signals are critical because fashion and home categories are highly subjective and changeable. Purva Gupta highlighted the supply-side constraint: brand catalog data is often underpopulated, limiting AI’s ability to answer intent-rich queries (for example, combining marathon training with plantar fasciitis).
+
+Both speakers converged on practical priorities: invest in catalog infrastructure and richer product content, run targeted experiments to find what improves discovery, and use paid channels to prove lift while upgrading core data systems to secure a first-mover advantage. The discussion emphasized concrete product-data improvements over purely modeling work and framed experimentation and paid proofs as the fastest path to measurable business impact.
+
+
+Chapters & Topics:
+
+Session opening and panel introduction
+The moderator and participants opened the session and introduced the topic of how AI can learn shopper taste, naming Julie Bornstein and Purva Gupta as the featured speakers and setting the context for a conversation about retail AI and data.
+
+Framing the core problem — understanding taste in commerce
+The moderator positioned taste as a hard problem involving nuance, context, and emotion behind searches, and asked why traditional search and recommendations fall short and how merchant descriptions contribute to that gap.
+* The meeting framed the central problem as a mismatch between merchant product descriptions and customer intent, which makes taste hard to solve in commerce.
+
+Julie Bornstein — subjectivity, images, and conversational UX
+Julie explained Daydream’s fashion recommendation approach using conversation, image upload, and contextual signals, argued that fashion and home are highly subjective, and emphasized that words alone fail while images and rich user context are critical for accurate recommendations.
+* Fashion recommendations require image and contextual information because words alone are insufficient for subjective style judgment.
+
+Purva Gupta — supply-side gaps and catalog infrastructure
+Purva argued the problem is primarily on the supply side where brands provide sparse product data (size, color, material), which prevents AI from answering intent-rich queries; she described how AEO/GEO/agentic discovery all depend on comprehensive product attributes and catalog infrastructure.
+* Brands commonly send incomplete product data, leaving AI systems unable to answer intent-rich queries.
+* Improving catalog infrastructure and filling missing product attributes is a prerequisite for effective AI-driven discovery.
+
+Shifts in commerce, practical priorities, and the future of shopping
+The panel discussed how AI is moving commerce from keyword matching to intent understanding, provided examples (running shoes with plantar fasciitis, red dress for a specific occasion), recommended priorities like enriching catalogs, experimenting with new experiences, and optimizing paid channels for immediate ROI, and debated the role of LLMs versus specialized shopping UIs as channels evolve.
+* Short-term wins can come from optimizing paid channels (Google/Meta) with better product data to demonstrate revenue lift before wider rollout.
+* Experimentation with new shopping experiences is encouraged because tools are improving and the space is evolving.
+* Agentic discovery (AI-driven recommendation interfaces) is likely to grow, but agentic checkout adoption remains uncertain.
+
+
+Action Items:
+
+* No action items generated
+
+
+Key Questions:
+
+* Why has taste been so hard to solve in commerce and where have traditional search and recommendations fallen short?
+* How has AI shifted commerce from keyword matching to understanding nuance and intent, and what changes for the shopper?
+* What should companies prioritize now to get AI taste right and what are common mistakes?
+* Where will shopping happen next—via LLMs/agentic systems or on existing marketplaces—and what should consumers expect?
+
+
+Notepad:
+
+* No notes

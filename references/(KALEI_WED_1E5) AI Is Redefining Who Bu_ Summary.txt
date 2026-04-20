@@ -1,0 +1,57 @@
+(KALEI_WED_1E5) AI Is Redefining Who Builds Software - Featuring: Lin Qiao (Fireworks AI), Amjad Masad (Replit), Kanjun Qiu (Imbue), Charles Rollet (Business Insider)
+Wed, Apr 8, 2026
+
+Summary:
+
+The panel reviewed how natural-language and agentic workflows are expanding who can build software and accelerating ideation-to-implementation across roles. Panelists framed token-maxing and token consumption as central drivers of productivity and cost trade-offs, and they debated how incentives affect output quality and safety; Amjad Masad cautioned against wasteful token use while arguing platforms should prioritize legal compliance over private censorship, Kanjun Qiu stressed open agents that keep user data local but reduce platform visibility, and Linh Chau highlighted token-driven productivity gains and projected 2026 as the start of a hyper-growth S-curve for AI-native applications, noting Fireworks processes over 18 trillion tokens daily.
+
+The discussion also covered real-world harms and platform responsibilities after an AI-enabled e-commerce incident, with panelists pointing to regulators for enforcement and reiterating tensions between user autonomy and safety. Participants described non-engineers and executives adopting "vibe coding" and agentic tools, and they forecast shifting software-engineer roles as automation changes demand and capability, while emphasizing the need for representative regulation and industry norms.
+
+
+Chapters & Topics:
+
+Opening and Topic Framing
+The session began with introductions and a thesis that AI is lowering barriers to software creation and redefining the role of builders through natural-language and agentic workflows. The moderator introduced the panelists and set the discussion focus on how AI changes development and productivity.
+* AI is lowering the barrier to building software by enabling natural-language and agentic workflows that change who can be a builder.
+
+Moderator Introduces Token-Maxing Question
+The moderator opened the panel, expressing excitement about vibe coding and asking about token maxing, including reports of corporate incentives to consume vast token volumes and whether token spending correlates with productivity. The moderator directed the first question to Amjad.
+* The moderator framed "token maxing" as a key concern linking token consumption, incentives, and productivity.
+
+Panelists on Token Usage and Productivity
+Amjad argued that spending more compute typically yields better results and recounted Replit’s experience optimizing agents and code by iterating with tokens, while warning about waste and energy costs. Imbue’s representative emphasized that incentives drive token use and raised concerns about agent ownership when platform incentives diverge from users’ interests. Linh Chau described Fireworks’ internal and cross-functional adoption of agentic tools and framed token consumption as productivity and time-to-market optimization.
+* Replit’s view: higher compute per task generally improves results but excessive, wasteful token spending and private platform censorship are problematic; legal regulators should arbitrate harmful use.
+* Imbue prioritizes open agents that store data locally to preserve user ownership, while acknowledging reduced platform visibility and the need for industry norms and government regulation.
+* Fireworks reports dramatic token-driven growth and processes over 18 trillion tokens daily, which they tie to faster ideation-to-production across company functions.
+
+Safety, Misuse, and Platform Responsibility (Medve / App Store)
+The moderator raised a high-profile example where an AI-enabled site monetized questionable products, prompting questions about platform responsibility and safety checks. Amjad responded that platforms follow law and regulators (FTC/FDA) should act on harmful content, noted Replit’s user base includes efficient single-person companies, and described friction with Apple over App Store restrictions and claims about code execution.
+
+Imbue on Open Agents and Governance Trade-offs
+Imbue described building open agents that store data locally so users own their memories and workflows, acknowledged reduced provider visibility and control, and argued for government regulation and industry norms like easy data portability and addressing bad actors.
+
+Examples of AI-Assisted Products and Enterprise Adoption
+Panelists discussed examples of executive and enterprise adoption, with Replit reporting executives using tools for prototyping and productivity, and Linh Chau describing company-wide agent adoption for tasks like Slack summarization and cross-functional agentic workflows. The panel noted that non-engineers increasingly build useful tools via vibe coding and agents.
+* The panel sees widespread adoption of agentic tooling by executives and non-engineers, enabling rapid prototyping and personal productivity gains.
+
+Future of Software Engineering and Company Visions
+Panelists predicted substantive changes to engineering roles as automation and agents increase output, with Imbue reporting one engineer matching prior team output via parallel agents and Replit observing internal agent adoption and shifting roles toward design and UX. Founders described growth plans, competitive pressure to continuously reinvent products, and differing company missions around ownership and long-term incentives.
+* Panelists expect the software-engineering role mix to change rather than disappear: automation will raise demand and enable smaller teams to deliver more complex systems.
+
+
+Action Items:
+
+* No action items generated
+
+
+Key Questions:
+
+* Does burning through large volumes of AI tokens ("token maxing") correlate with higher output and productivity, and what are the implications of incentivizing token consumption?
+* As platforms enabling easy creation (vibe coding) scale, who is responsible for safety when AI-generated products cause harm, such as misleading health information or fraud?
+* How are companies using AI agents internally and what notable AI-assisted products have emerged from your platforms?
+* Will there be more or fewer software engineers in five years given AI-assisted coding and automation?
+
+
+Notepad:
+
+* No notes

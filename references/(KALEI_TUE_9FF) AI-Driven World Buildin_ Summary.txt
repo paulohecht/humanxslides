@@ -1,0 +1,60 @@
+(KALEI_TUE_9FF) AI-Driven World Building with Roblox - Featuring: David Baszucki (Roblox), Alex Heath (Sources)
+Tue, Apr 7, 2026
+
+Summary:
+
+The conversation reviewed Roblox's current scale, engagement, creator payouts, and industry impact to establish the platform's role in large-scale interactive entertainment. Speakers outlined Roblox's technical vision as an integrated cloud-and-client 3D simulation platform that aims to deliver large-scale, photoreal multiplayer experiences via a hybrid architecture combining conventional 3D systems with AI-driven video and world models, and they positioned that architecture as the foundation for future immersive experiences.
+
+Participants then examined internal work on world models and how those models will support both real-time player experiences and creator tooling, with an explicit decision to keep creator and simulation data in-house rather than licensing it externally to preserve control over quality and safety. David Baszucki highlighted NPCs as an early, high-value use case for simulation data to accelerate creation and testing, noted that creator payouts have been increasing and should broaden across creators, and closed by addressing required safety guardrails for AI-driven NPCs and a forecast that interactive IP on Roblox will expand into linear media.
+
+
+Chapters & Topics:
+
+Opening and Introduction
+The session opened with light banter and an introduction to the conversation topic: AI-driven world building with Roblox featuring CEO David Baszucki and interviewer Alex Heath. The host framed the discussion as focused on the future of immersive worlds and the creator ecosystem.
+
+Platform Scale and Framing Roblox's Vision
+Alex Heath reviewed Roblox’s scale—daily users, engagement metrics, creator payouts, and industry influence—to set context for the interview. Baszucki framed Roblox as a "Holodeck"–style human experience platform and contrasted the maturity of video versus gaming to motivate Roblox’s long-term goals for scale and realism.
+* Roblox reported substantial creator payouts (~$1.5 billion last year) and expects that money to flow to a broader set of creators over time.
+
+AI, World Models, and Market Reaction
+The speakers discussed investor reactions to advances like Google's Progeny and compared LLM growth to potential advances in world and video models. Baszucki argued that while photoreal, agentic generation hints at future capabilities, hybrid architectures will be required for multiplayer and large-scale realtime experiences.
+* Roblox positions itself as an integrated 3D cloud-and-client platform aiming to enable massive, social, photoreal experiences.
+* Roblox believes the ultimate architecture for scale and photorealism will be hybrid, combining video models, AI, and traditional 3D systems.
+
+Roblox's World-Model Work and Data Strategy
+Baszucki described ongoing work on real-time video and world models and positioned those tools as both runtime experiences and creator-facing creation technologies. He also clarified Roblox’s position of training internal foundational 3D models on Roblox data and not licensing raw data externally.
+* Roblox is actively developing internal world models and sees these models serving both player experiences and creator tooling.
+* Roblox will not sell its creator and simulation data and intends to use internal foundational models trained on Roblox data.
+
+NPCs, Testing, and Creator Economics
+The conversation covered NPCs as a key application of Roblox’s rich 3D telemetry for agent training, testing, and content creation acceleration. Baszucki discussed creator payments, noting approximately $1.5 billion paid out last year and an expectation that payouts will spread to a broader base of creators.
+* NPCs are a priority use case for Roblox data because the platform captures precise 3D states and avatars useful for training simulation agents.
+
+Safety, Age-Checking, and Guardrails
+Interviewers raised concerns about young users interacting with AI and chatbots; Baszucki outlined Roblox’s history of safety measures and previewed additional content and age-checking work to enable safer NPC deployment with guardrails.
+* Roblox intends to apply guardrails and age-checking to AI/NPC interactions to protect younger users.
+
+Cultural Impact and Future Predictions
+The final segment explored how Roblox creations can expand into broader culture and media, and Baszucki predicted that interactive-first IP on Roblox will increasingly spawn linear adaptations like TV and film. The session concluded with thanks and closing remarks.
+* David Baszucki predicts interactive creations on Roblox will increasingly be adapted into linear media like TV and film.
+
+
+Action Items:
+
+* No action items generated
+
+
+Key Questions:
+
+* Does that summary of Roblox’s scale and metrics sound right?
+* How did you react to Google unveiling Progeny and the subsequent market response about video/world models?
+* Are you building world models from Roblox data or using other data sources, and how will those models be trained?
+* Will Roblox sell or license its creator and simulation data to other AI companies?
+* If creators contribute data used to improve models, will they share in the upside?
+* How will Roblox handle potential negative externalities from NPCs and AI interactions with young users?
+
+
+Notepad:
+
+* No notes

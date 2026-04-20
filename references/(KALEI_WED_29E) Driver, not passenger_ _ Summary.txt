@@ -1,0 +1,56 @@
+(KALEI_WED_29E) Driver, not passenger: building in the age of AI - Featuring: Anton Osika (Lovable), Nico Rosberg (Rosberg Ventures)
+Wed, Apr 8, 2026
+
+Summary:
+
+The meeting introduced a conversation about empowering non-engineers to create software with AI, framed around Lovable’s origins and product vision. Anton Osika described Lovable as an experiment proving that software can be generated through conversational interfaces and said broad interest from non-developers on GitHub revealed a sizable market opportunity. He recounted founding the company with Fabian, explained the focus on enabling the “99%” to build business software with simple interfaces, and reflected on early hiring mistakes—especially delaying commercial hires—while emphasizing that hiring for aligned DNA and long-term motivation became a core strength.
+
+The discussion then moved from prosumer examples to enterprise adoption and technical strategy. Anton gave customer examples including integrations at large companies and cited platform usage and production load as indicators of traction. He outlined Lovable’s roadmap to support the full software lifecycle, highlighting automated security scanning, penetration testing, compliance support, and model-agnostic orchestration to enable maintenance and governance. The session closed with encouragement to start building now, a note about building in public and partner dependencies for multimodal features, an artist-focused audience question, and applause with a brief photo moment.
+
+
+Chapters & Topics:
+
+Event opening and panel introduction
+The host welcomed attendees and introduced Anton Osika and Nico Rosberg, framing the conversation around AI enabling non-engineers to build software and the shift from being a "passenger" to a "driver" in technology creation. The panel context set expectations for discussion of prosumer and enterprise use cases.
+
+Anton’s origin story and product genesis
+Anton explained Lovable’s origin as a terminal-based experiment that went viral on GitHub and revealed strong interest from non-engineers, which motivated pivoting to a broader audience and building an accessible platform with co-founder Fabian. He framed the product’s objective as simplifying software creation for the majority of users.
+* Lovable began as an experiment to create software by talking to AI and discovered strong non-engineer demand after a viral GitHub release.
+* Anton sees the company’s mission as enabling the “99%” to build production software with simple interfaces and shares that vision with co-founder Fabian.
+
+Hiring lessons and company culture
+Anton reflected on hiring mistakes, notably delaying a commercial hire, and emphasized learning to hire for cultural fit and long-term commitment as a major success factor. He advised interviewing for sustained motivation and evidence of difficult achievements as signals of aligned DNA.
+* Early hiring gaps—particularly missing commercial hires—slowed some progress and remain a lesson for the team.
+* Lovable prioritizes hiring for cultural DNA and long-term motivation over purely technical brilliance.
+
+Audience engagement and light banter
+The hosts ran a light-hearted audience poll about F1 allegiances and engaged attendees about Lovable’s popularity, using the moment to transition into product examples and community enthusiasm. The exchange reinforced Lovable’s strong prosumer community presence.
+
+Prosumers and real-world founder examples
+Anton shared multiple user stories, including a non-technical founder who built a healthcare staffing platform and reached $1M revenue in five months, and creatives using the platform to solve tax and freelance problems. He framed these as evidence of the platform unleashing creativity across individuals and within large companies.
+
+Enterprise adoption, scale, and foundation models
+Anton described enterprise use cases at Uber Eats and Microsoft and positioned Lovable as enabling real-time customer-driven interface changes and pitch generation that drive measurable ROI. He provided product metrics—100,000 projects built daily and 600M monthly visits—and discussed a model-agnostic approach and automated security and compliance tooling to support production workloads.
+* The product strategy is model-agnostic and combines in-house and external foundation models to choose the best model per scenario.
+* The platform is already used in production at scale, with 100,000 projects built daily and 600 million monthly visits cited.
+* Lovable is evolving from a build-only tool to a full lifecycle platform that includes security scanning, penetration testing, and compliance features.
+
+Partnerships, call to action, Q&A, and close
+Anton acknowledged third-party partnerships for multimodal features and encouraged entrepreneurs and creators to build now, sharing personal anecdotes about building in public. The session concluded with an audience question about artists’ usage, Anton’s positive examples, and a closing round of applause and photos.
+* Partnerships (e.g., voice, image providers) are essential for multimodal functionality and overall product capability.
+* Creative users and artists are active, productive adopters of the platform, exemplified by several high-profile creators.
+
+
+Action Items:
+
+* No action items generated
+
+
+Key Questions:
+
+* How have artists and creative people been using Lovable and the broader ecosystem of non-core tech users?
+
+
+Notepad:
+
+* No notes

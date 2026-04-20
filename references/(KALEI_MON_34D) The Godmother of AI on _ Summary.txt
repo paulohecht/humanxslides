@@ -1,0 +1,92 @@
+(KALEI_MON_34D) The Godmother of AI on What Comes Next - Featuring: Dr. Fei-Fei Li (World Labs, Stanford Human-Centered AI Institute), Ed Ludlow (Bloomberg)
+Mon, Apr 6, 2026
+
+Summary:
+
+The meeting examined Fei‑Fei Li’s position that AI is moving beyond a language-dominant era toward spatial intelligence, defined as the ability to perceive, reason about, generate, and act within 3D/4D spaces, and contrasted language models with richer “world models” that require perception and embodiment. Li described founding World Labs to pursue large-scale spatial AI work that she judged impractical in traditional academia because of the compute, data, and specialized talent required. She laid out three technical pillars—compute, models, and especially training data—and presented a hybrid real-plus-synthetic approach plus a generated 3D asset called Marble intended to produce reusable, consistent 3D worlds for robotics training, games, and VFX.
+
+The discussion then moved to early-stage technical progress and business positioning, noting the team is focused on model-building rather than monetization and is open to cross-sector collaboration while affirming legal compliance for government or civic customers; a specific litigation question was declined due to limited knowledge. Participants unpacked the world‑model concept as a fine‑grained state-and-prediction system for embodied agents, highlighted a critical robotics data shortage, and argued that high-quality world modeling plus synthetic or reconstructed datasets could create a robotics data flywheel. The group identified current spatial-intelligence domains in self-driving and medical imaging and saw gaming and immersive experiences as growing application areas, and the founder reflected on the personal differences between academic research and CEO responsibilities.
+
+
+Chapters & Topics:
+
+Introduction and Framing of Spatial Intelligence
+The host introduces Fei-Fei Li and her November essay framing spatial intelligence as AI’s next frontier after language models. The interviewer asks Li to define spatial intelligence and she begins by affirming the continued importance of language while emphasizing that everyday human activity depends on 3D perception, movement, and interaction.
+* Fei-Fei Li positions spatial intelligence as the next major frontier in AI beyond language models.
+* Li uses the metaphor “wordsmiths in the dark” to explain the limitation of text-only systems lacking embodied perception.
+
+Evolutionary Metaphor and the Need for Perception
+Li explains the evolutionary roots of perception and argues that visual and haptic sensing enabled awareness and complex behavior, using that history to justify why spatial perception is essential for intelligent systems. She stresses that intelligence without spatial grounding is akin to operating “in the dark” and that perception, reasoning, action, and generation are all components of spatial intelligence.
+
+Distinction Between Language Models and World Models
+The conversation shifts to clarifying the technical difference between language models and world models, with Li noting evolving definitions and articulating her working definition that a world model must understand geometry, semantics, physics, dynamics, and the ability to generate 3D/4D content. She also lists potential application domains unlocked by such capabilities, including robotics, healthcare, education, and creative industries.
+* A world model must understand and generate 3D/4D space, reason about geometry and dynamics, and support interaction.
+
+Rationale for World Labs and Industry Role
+Li describes founding World Labs as a continuation of her career in visual intelligence and contends that industry-scale resources are necessary to advance generative spatial AI beyond what academia can sustain alone. She emphasizes the complementary role of academia and the public sector while arguing that concentrated industrial effort is required for frontier-scale compute and teams.
+* Li founded World Labs because industrial-scale compute, data, and talent are required to build spatial AI at the needed scale.
+
+Team, Funding, and Operational Constraints
+The discussion covers World Labs’ size and funding context, noting the company’s ~40-person focus and large capital needs as a frontier model company that must secure compute, data, and talent to operate at scale. Li acknowledges the cost and pressure of proving market success while viewing the resources as enabling historically unique opportunities.
+
+Technical Constraints and Data Challenges
+The host revisits prior AI “unlocks” and asks what will drive spatial AI; Li reiterates three pillars—compute, models, and training data—and singles out training data as the hardest challenge due to scarcity and uniqueness of spatial datasets compared to text. She states World Labs trains with mixtures of real and synthetic data and treats mixing strategies as an important proprietary capability.
+* World Labs views training data as the hardest constraint for spatial AI and uses a mix of real and synthetic data.
+
+Marble and 3D World Generation Use Cases
+Li introduces Marble as World Labs’ early 3D generation model that creates persistent, true 3D worlds for downstream use in gaming, robotics training, and film VFX, and she explains why the team started with 3D generation because it was an unmet need. She characterizes current Marble outputs as small but composable assets (e.g., “hotel lobby” scale) and positions them as a foundation for larger worlds and ecosystems.
+* Marble is World Labs’ early product for generating true, reusable 3D worlds intended for downstream use in robotics, gaming, and VFX.
+* Current Marble worlds are modest in scale (compared to full worlds) but are designed to be composable for larger environments.
+
+Decision to pursue hard technical work and current business stage
+The conversation opens with a statement that the team undertook a difficult technical problem and the speaker decided to pursue it. The speaker clarified that the effort has not yet been monetized and that the company is still focused on model building rather than establishing a business model.
+* The team deliberately chose to tackle a difficult technical problem and remains in a model-building stage rather than monetizing the work.
+
+Government use and civic collaboration stance
+A question was raised about the company's position on government use of its technology, citing a specific litigation example, and the speaker declined comment on the specific case due to limited knowledge. The speaker expressed a general willingness to have the technology used broadly across industries and to work within legal constraints when engaging with civic partners.
+* The company intends to make its technology widely usable across industries and to work within legal frameworks when engaging with government or civic partners.
+
+Definition and importance of a world model and state prediction
+The participant explained that a "state" is a snapshot of the world and that predicting the next state is essential for planning and action, using analogies such as a tennis player predicting the ball and language models predicting next tokens. They highlighted that state prediction operates at very small temporal scales and is fundamental to spatial intelligence.
+* A world model is defined as a representation of the current state that can predict the next state at fine temporal resolution, and it is core to spatial intelligence.
+
+Robotics—embodiment, data scarcity, and hybrid training approaches
+The speaker distinguished embodied robotics from abstract machines and noted robotics is still early-stage with fundamental challenges. A central constraint identified was a lack of robotics and 3D world data, and the speaker suggested that world modeling and synthetic or reconstructed data could help build a robotics data flywheel.
+* Robotics faces a pronounced data shortage, and high-quality world modeling plus synthetic/reconstructed data could feed a robotics data flywheel.
+
+Current and near-term application domains (self-driving, medical imaging, games)
+The group debated where spatial intelligence is already showing up, citing self-driving vehicles as clear examples and noting companies like Tesla and Waymo building world models for that domain. They discussed medical imaging as a spatial problem that could benefit from 3D-aware models, and they considered gaming and immersive experiences as promising areas for broader consumer-facing adoption.
+* Spatial intelligence is already present in specialized domains like self-driving cars and medical imaging and may expand into games and immersive experiences.
+
+Reaction to the "godmother of AI" label
+The speaker described discomfort with the "godmother of AI" label, saying they cringed at the title and weighing whether rejecting it would close opportunities, while recognizing many other contributors and leaders in the field.
+
+Role contrast between researcher and CEO
+The founder articulated a strong difference between her research identity and her CEO identity, saying she enjoys both the curiosity-driven work with students and the builder role focused on creating market-proof technology. She emphasized that as CEO the priority is building technology that changes people's lives, whereas as a researcher the guiding star is curiosity.
+* The founder experiences a clear role shift between curiosity-driven academic research and product-driven CEO work, and she values both roles.
+
+
+Action Items:
+
+* No action items generated
+
+
+Key Questions:
+
+* How do you define spatial intelligence?
+* What did you mean by calling current language systems “wordsmiths in the dark”?
+* What is the fundamental difference between a world model and a language model?
+* Why did you choose to build spatial intelligence in a company rather than solely in academia?
+* What are the main constraints on progress toward spatial intelligence and what will unlock it?
+* How relevant is synthetic data for your ambitions at World Labs?
+* Why did World Labs start with Marble as a product?
+* What is your position on the government's right to use technology developed by a company, given recent litigation examples?
+* What does it mean for a world model to "predict the next state of the world," and why is that important?
+* In robotics specifically, what can you do and what are the current challenges?
+* In which domain is spatial intelligence most likely to appear first?
+* How would spatial intelligence improve medical imaging like radiology compared with current technology?
+
+
+Notepad:
+
+* No notes

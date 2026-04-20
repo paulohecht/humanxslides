@@ -1,0 +1,59 @@
+(KALEI_TUE_BDE) How Databricks Plans to Bring AI to Every Team - Featuring: Ali Ghodsi (Databricks), Deirdre Bosa (CNBC)
+Tue, Apr 7, 2026
+
+Summary:
+
+The meeting presented Databricks' mission to centralize enterprise data in a secure Lakehouse and make that data broadly usable for analytics and AI. Ali Ghodsi traced the company’s roots to academic AI research and emphasized its long-standing investments in security and governance as foundational capabilities for enterprise AI use cases. The discussion described a strategic shift from a pure data platform toward building first‑party, agent‑enabled SaaS products, beginning with a security information product and additional launches planned for the summer, with proprietary customer data framed as a competitive moat.
+
+The conversation then placed Databricks’ strategy in industry context, arguing that current large models are already technically capable but that the lack of enterprise context and reliability makes organizational process change the primary barrier to broad adoption over the next five to ten years. Ghodsi contrasted scale‑centric approaches with efficiency strategies, reiterated that Databricks supports multiple model providers on its platform, and gave customer examples where agent products produced rapid, accurate answers that previously took months to obtain.
+
+
+Chapters & Topics:
+
+Introduction and Event Context
+The host introduced the session topic—how to move AI from experimentation to enterprise impact—and invited Ali Ghodsi for a conversation about Databricks’ role in that transition. The moderator framed the discussion by referencing the rapid evolution of AI tools and audience interest in practical enterprise adoption.
+
+What Databricks Does and Its Origins
+Ghodsi explained Databricks’ core function: consolidating data from multiple systems into a secured Lakehouse, setting access rules, and enabling analytics and AI for business decisions. He traced the company’s roots to UC Berkeley research and emphasized that data quality and governance are critical complements to model advances.
+* Databricks centralizes enterprise data into a secured "Lakehouse" and feeds it to analytics and AI tools for decision making.
+* Databricks’ foundational advantage is combining large-scale data processing with security and governance.
+
+Moving Toward First‑Party Products and Strategy
+The discussion covered Databricks’ acceleration from a data platform to building first‑party applications, citing a "SaaS apocalypse" and the company’s launch of an agent‑enabled SIEM product with more offerings planned for the summer. Ghodsi described a selective launch strategy focused on areas where proprietary data provides a moat.
+* The company is moving beyond a data layer into first‑party SaaS products, starting with a SIEM-like security product and more launches planned this year.
+* Product launches are being prioritized where organizations’ proprietary data forms a defensible moat, such as security and governance use cases.
+
+Product Cadence, Market Positioning, and Competition
+The conversation addressed product cadence, concerns about competing with established software vendors, and the company’s large customer base as opportunity for targeted expansion. Ghodsi noted Databricks’ substantial ARR from a data product and said the company returned focus to AI and agent governance after renewed market interest in generative models.
+
+AI Capability, Reliability, and Industry Dynamics
+Ghodsi argued that current models are highly capable but fail in enterprise settings because they lack context and reliability, making process change the central challenge that won’t be solved solely by larger models. He discussed the performative use of AI (token‑maxing) versus productive use, and characterized hyperscaler model providers as necessary infrastructure partners.
+* Ghodsi believes current AI models are sufficiently capable but fail in enterprises due to missing context and reliability, requiring process and context engineering.
+* He expects enterprise adoption to take years (around 5–10) rather than being fixed by the next model release.
+* Databricks integrates multiple model providers (OpenAI, Anthropic, Gemini, open-source) into its platform rather than backing a single vendor strategy.
+
+Customer Examples and Practical Impact
+Ghodsi provided customer examples where Databricks agents (Genie) delivered fast, referenced answers for complex scientific and operational questions, replacing months‑long analyses with minutes‑long responses. He concluded by reiterating the priority of making AI useful within enterprises through better context rather than pursuing speculative superintelligence.
+* Customers are valuing agent functionality (automating triage and response) more than the raw cost savings in security products.
+* Databricks cites concrete customer wins where agents produced accurate, referenced results in minutes for complex queries that previously took months.
+* Ghodsi warned against focusing primarily on a race to ever‑larger models for superintelligence and urged practical enterprise utility first.
+
+
+Action Items:
+
+* No action items generated
+
+
+Key Questions:
+
+* How do organizations move from experimentation to enterprise impact with AI?
+* Why is Databricks moving from a data layer into building first‑party products now?
+* Can you disclose the product Databricks plans to announce in the summer?
+* Is the AI boom a bubble, and has it deflated?
+* Which strategy is better—spending heavily on compute (OpenAI‑style) or focusing on efficiency (Anthropic‑style)?
+* Has the promised cost reduction (up to 80%) in your security product held up and helped win customers?
+
+
+Notepad:
+
+* No notes

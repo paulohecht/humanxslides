@@ -1,0 +1,60 @@
+(KALEI_TUE_BD9) How OpenAI Builds - Featuring: Srinivas Narayanan (OpenAI), Rachel Metz (Bloomberg)
+Tue, Apr 7, 2026
+
+Summary:
+
+The meeting examined how OpenAI translates research breakthroughs into usable products, with particular emphasis on recent model capabilities, coding applications, and the emergence of agentic systems. Speakers described how improving model capabilities informs product design and cited coding models such as Codex as catalysts that reduced project timelines from months to weeks and enabled engineers to run multiple agents in parallel. They framed coding as a foundational primitive that extends beyond software development into domains like finance and legal work, and they noted high-volume internal and external adoption, including examples at Cisco, Virgin Atlantic, and Rakuten.
+
+Discussion then shifted to strategy for agents and safety. The team described hiring Peter Steinberger to build on OpenClaw work and outlined partner-facing product efforts such as Frontier with collaborators including HP, Intuit, and Uber. Participants emphasized the need for guardrails, red teaming, and interoperability protocols as agents gain system access and begin interacting with other agents. The meeting closed with plans to simplify product surfaces and a shared view that managing AI agents will change work practices and enable people to execute ideas more quickly.
+
+
+Chapters & Topics:
+
+Introduction and Session Framing
+The session opened with a framing question about how OpenAI turns research breakthroughs into products for enterprises, startups, and consumers and introduced Srinivas Narayanan in conversation with Rachel Metz. The moderator set the topic and invited discussion about productization of research and agentic capabilities.
+
+Model Progress and the Rise of Coding AI
+Srinivas described rapid monthly advances in models and how emerging capabilities guide product choices, citing GPT-era milestones and the intuition that comes from model development. He emphasized that software engineering has been fundamentally transformed by coding models, shifting engineers’ roles toward managing agents and guiding AI-generated code.
+* OpenAI converts new model capabilities into product direction by observing what models do well and shaping products accordingly.
+* Coding models like Codex have rapidly transformed software engineering workflows and can generate entire repositories with human guidance and review.
+
+Coding at Scale and Verification Practices
+The speakers examined how AI-generated code is validated through tests and human review and discussed real-world examples where CodeX produced complete repositories under human guidance. They highlighted customer adoption at scale, with companies like Cisco and Virgin Atlantic using Codex to accelerate projects from months to weeks.
+* Companies including Cisco, Virgin Atlantic, and Rakuten are using coding models at scale to build, refactor, and debug software, shortening delivery timelines.
+* Coding capabilities are becoming the underlying primitive for broader agentic knowledge-work across verticals such as finance and legal.
+
+Broader Knowledge Work and Agent Strategy (including Peter Steinberger)
+The conversation expanded to science, medicine, and other domains where AI could accelerate discovery, noting longer validation cycles for real-world scientific applications. Srinivas explained the rationale for hiring Peter Steinberger and integrating OpenClaw ideas to advance personal-agent development and general agentic workflows.
+* OpenAI hired Peter Steinberger to bring OpenClaw ideas into agent product work and to advance personal-agent capabilities.
+
+Agent Utility, Context, and Partnerships (Frontier)
+Srinivas assessed that agentic utility is currently earlier outside coding due to challenges of context, system access, and verifiability, and described Frontier partnerships with companies such as HP, Intuit, and Uber to deploy agents at scale. He predicted increasing agentic use across verticals as context and tooling improve.
+* OpenAI is deploying agent products with partners through initiatives like Frontier while noting that access to context and systems is a key blocker for broader agent utility.
+
+Safety, Risks, and Interoperability Protocols
+The meeting addressed risks from agent access to tools and sensitive data, explaining multi-layer guardrails, training practices, and red teaming (including the Promfoo acquisition) to mitigate harms. They discussed emerging protocols and standards (e.g., MCP) and open questions about agent identity and behavior when agents interact with other agents.
+* Safety, model security, guardrails, and red teaming are central priorities as agents gain access to tools and sensitive data.
+* Industry standards and protocols for agent interoperability and identity (e.g., MCP) are already emerging and will be important as agents interact with each other.
+
+Product Simplification and the Future of Managing Agents
+Srinivas described product simplification efforts to consolidate ChatGPT and Codex capabilities into a single interface for broader knowledge work and confirmed his team’s focus on product business applications despite company-wide changes. He concluded that managing AI agents will shift work toward higher-level idea execution and empower people to accomplish larger goals more quickly.
+* OpenAI plans to simplify its product surface by combining capabilities (ChatGPT, Codex) into more unified interfaces for general knowledge work.
+
+
+Action Items:
+
+* No action items generated
+
+
+Key Questions:
+
+* How does OpenAI turn research projects into products and what is that process like?
+* Was it always clear that AI would be useful for coding and when did that become practical?
+* How can you ensure AI-generated code is not buggy or problematic?
+* What are companies actually doing with coding AI and which customers are notable examples?
+* What safety measures and research does OpenAI use to mitigate risks from agents that have access to systems and data?
+
+
+Notepad:
+
+* No notes

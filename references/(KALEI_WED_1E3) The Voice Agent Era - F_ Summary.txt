@@ -1,0 +1,56 @@
+(KALEI_WED_1E3) The Voice Agent Era - Featuring: Mati Staniszewski (ElevenLabs)
+Wed, Apr 8, 2026
+
+Summary:
+
+The meeting introduced Mati Staniszewski of ElevenLabs and positioned voice as a primary human–machine interface, supported by a live demonstration of ElevenLabs’ 11 Agents platform. Mati outlined the platform’s core models—expressive low-latency text-to-speech, high-accuracy speech-to-text, and turn-taking models—and emphasized that agents must be configurable, production-grade, and monitored to deliver ROI for enterprises.
+
+The demo presented a government-style business-support scenario where an agent initially failed to transfer a tax query, prompting the team to create a development branch to connect agents and iterate the flow. The integrated solution then authenticated the user, accessed documents, switched languages, and completed a tax-handling handoff using WhatsApp verification, demonstrating end-to-end capabilities. The presentation concluded with customer examples including Revolut and Deutsche Telekom and the strategic assertion that deployment speed, rather than core model capability, is the current competitive bottleneck.
+
+
+Chapters & Topics:
+
+Opening and speaker introduction
+The call opened with thanks to organizers and an introduction of Mati Staniszewski as the ElevenLabs co-founder who would present on voice agent technology and demos.
+* Voice is framed as the most natural interface for human–machine interaction and central to accessing general intelligence capabilities.
+
+Vision for voice and platform strategy
+Mati framed the importance of accessible general intelligence and argued that virtual human communication is key, outlining ElevenLabs’ mission to pair voice with knowledge systems to build actionable conversational agents.
+
+Core models and product capabilities
+The team described the platform’s core models—11v3 TTS, 11scribe STT, and a turn-taking model—and emphasized production needs: brand configuration, system integration, scalable deployment, and enterprise monitoring.
+* ElevenLabs positions 11 Agents as a platform combining expressive text-to-speech, accurate speech-to-text, and turn-taking to enable conversational voice agents.
+
+Live demo — initial agent and failure to transfer
+A live demo presented a government business-support agent that handled registration but failed to transfer a tax-related query, revealing a gap in cross-agent routing during the initial run.
+
+Development workflow and successful cross-agent integration
+The presenter created a demo branch to connect the business helper to a tax agent, redeployed, and successfully tested seamless transfer, authentication, document access, and WhatsApp verification in the integrated flow.
+* The team demonstrated connecting distinct departmental agents by branching and deploying changes to enable seamless transfers between services.
+* The integrated demo included authentication via WhatsApp and automatic access to user documents to complete tax setup workflows.
+* The system supports automatic language switching and consistent emotional/intonation control across languages during live interactions.
+
+Proactive engagement and callback scenario
+The demo continued by showing proactive outreach where an SBA agent called back to offer a startup grant, recorded business plans, and promised follow-up within days, illustrating proactive, emotionally attuned engagement.
+
+Customer examples, strategic message, and closing
+The presenter cited enterprise customers (Revolut, Deutsche Telekom) using agents at scale, described internal use cases at ElevenLabs, and concluded that the immediate competitive edge comes from rapid deployment and iterative scaling rather than core technology limits.
+* Enterprise deployments at scale are in production with partners such as Revolut resolving customer issues faster and Deutsche Telekom using agents in-network for real-time translation.
+* The presenter asserted the primary current bottleneck is deployment and iterative learning, not base model capability.
+
+
+Action Items:
+
+* No action items generated
+
+
+Key Questions:
+
+* Can the business-support agent help with tax matters and transfer me to the tax department?
+* Would you like me to access your Google Workspace to retrieve documents for tax setup?
+* Could you explain the seller’s permit information in Spanish for Spanish speakers?
+
+
+Notepad:
+
+* No notes

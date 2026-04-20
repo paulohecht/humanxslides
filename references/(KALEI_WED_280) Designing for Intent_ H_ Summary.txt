@@ -1,0 +1,55 @@
+(KALEI_WED_280) Designing for Intent: How Canva Is Reimagining the Creative Workflow - Featuring: Cameron Adams (Canva)
+Wed, Apr 8, 2026
+
+Summary:
+
+The meeting focused on designing for intent and the role of AI in creativity and work. The speaker framed the core choice for builders as designing tools that replace people versus tools that augment human agency and noted that, despite AI’s transformative potential, advanced AI adoption remains limited among most people. The discussion established Canva’s mission to empower design and provided scale and usage metrics: 13 years in operation, over 45 billion designs created, 265 million monthly users, roughly 400 designs produced per second, and about 27 billion uses of its AI features.
+
+The conversation then shifted to product strategy and technical work, emphasizing that creativity is a journey requiring human judgment, context, and collaboration rather than single-prompt generation. The speaker criticized point-solution AI workflows as fragmented and laborious and described Canva’s platform response: a unified approach centered on a custom foundational model called the Canva Design Model that can generate and edit layered multimedia designs with visual awareness. The model and product learn from billions of editing interactions to personalize and improve outputs, and the team highlighted collaboration between people and AI using workflows such as Canva Grow, closing with an invitation to an upcoming product debut that infuses people and AI into creative workflows.
+
+
+Chapters & Topics:
+
+Opening and audience check-in
+The session opened with brief introductions and a check for creatives and designers in the room, setting the stage for a talk about design and AI. The host introduced the speaker and acknowledged his influence on attendees’ design skills and on the broader design community.
+
+Context — technology shifts and AI adoption reality
+The speaker positioned AI as the latest major technological shift after computing, internet, and mobile, and cautioned against assuming universal adoption given that over half the world is not using AI tools and advanced AI usage remains rare. He contrasted Silicon Valley perspectives with global reality to argue for deliberate product choices about augmentation versus replacement.
+* Most people worldwide are not currently using advanced AI tools in daily work, so adoption is still nascent
+* Canva sees AI as a means to augment human agency and insists on keeping people accountable for creative output
+
+Canva’s mission, scale, and AI integration
+The speaker summarized Canva’s 2012 mission to empower design, claimed that design enables bringing ideas to reality, and provided usage metrics including 13 years of operation and tens of billions of designs created. He characterized Canva increasingly as an AI platform with deep design integration and cited 27 billion uses of its AI features.
+* Canva reports large-scale engagement: ~265 million monthly users, 45 billion designs total, and ~400 designs created per second
+* Canva has recorded 27 billion uses of its AI features, indicating extensive in-product AI interaction
+
+Philosophy of creativity and human responsibility
+The speaker emphasized that creativity is a process of experimentation requiring human judgment, cultural fluency, and accountability, and warned against outsourcing these responsibilities to AI alone. He argued content exists to connect people, so human oversight and contextual understanding must remain central.
+
+Problems with current AI-for-creative workflows
+The speaker critiqued existing AI workflows as fragmented and iterative—prompting, copy-pasting between tools, and struggling to preserve brand context and data connections—which makes the process laborious. He stated Canva’s intent to simplify and unify those steps into a single platform experience.
+* Current creative AI workflows are fragmented and require a unified platform approach to reduce repetitive copy-paste and context loss
+
+Technical response — visual AI and the Canva Design Model
+The speaker described visual AI as distinct from text or code, noted the multimedia complexity of design, and introduced the Canva Design Model as a custom foundational model that can generate and edit layered, multimedia designs with visual awareness. He highlighted the importance of editable outputs and learning from billions of edit interactions to personalize creative outputs.
+* Canva built a custom foundational model, the Canva Design Model, to handle layered, multimedia visual design generation and editing
+* Canva leverages billions of edit interactions to personalize design outputs and to power end-to-end creative workflows like Canva Grow
+
+Workflows, collaboration, and product tease
+The speaker outlined a vision of powering end-to-end creative workflows with humans at the center, gave Canva Grow as an example that combines generative design and platform data to improve creative performance, and invited the audience to a forthcoming product debut that integrates people and AI into new workflows.
+* Collaboration between people, teams, and AI is central to Canva’s product direction and forthcoming product release
+
+
+Action Items:
+
+* No action items generated
+
+
+Key Questions:
+
+* No key questions generated
+
+
+Notepad:
+
+* No notes

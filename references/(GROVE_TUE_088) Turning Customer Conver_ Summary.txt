@@ -1,0 +1,56 @@
+(GROVE_TUE_088) Turning Customer Conversations into Action - Featuring: Dylan Fox (AssemblyAI), Priya Vijayarajendran (ASAPP), Arun Chandra (NiCE), Andrew Tan (TLDR AI)
+Tue, Apr 7, 2026
+
+Summary:
+
+The panel convened to examine how AI can turn customer conversations into measurable business outcomes and why many enterprise pilots do not scale. Speakers introduced their organizations and roles: Dylan Fox of AssemblyAI described voice-AI infrastructure and developer usage, Arun Chandra of NICE framed CXAI offerings and enterprise deployment constraints, and Priya Vijayarajendran of ASAPP emphasized agent-based orchestration for customer service workflows.
+
+Discussion moved from common deployment patterns and pilot failures to practical levers for scaling. Panelists identified three customer segments—piloters, stack-modernizers, and end-to-end thinkers—and stressed preparing data, knowledge, and change management before scaling. They emphasized the need for rich telemetry and rapid iteration to diagnose failures such as hallucinations and missing data. The group argued that automating conversations alone is insufficient; teams must redesign workflows, integrate security and data teams, and measure downstream business outcomes rather than surface metrics like deflection. Remaining operational challenges included cost, global scale, multilingual support, and visibility into token usage.
+
+
+Chapters & Topics:
+
+Opening and Panel Purpose
+The host introduced the panel topic as converting customer conversations into actionable outcomes and framed the core question of how to get real value from AI in customer interactions. The panelists were named and their high-level domain expertise was presented to set expectations for the discussion.
+
+Panelist Introductions and Company Capabilities
+Dylan Fox described AssemblyAI's voice-AI infrastructure and scale of developer usage. Arun Chandra summarized NICE's CXAI suite and orchestration between human and virtual agents. Priya Vijayarajendran introduced ASAPP as an agent-based platform for customer service and gave examples of customer-facing use cases.
+
+Adoption Challenges and Customer Segments
+The group discussed that customers face adoption, integration, and cost-justification challenges when adopting AI for conversations. Arun categorized customers into pilots, modernizers, and strategic integrators and emphasized the need to consider privacy, legal, and compliance for enterprise scale.
+* Enterprises must plan beyond pilots and address data, knowledge, and change management to scale AI deployments.
+
+Telemetry, Iteration, and Diagnosing Failures
+Dylan stressed the need for telemetry and rapid iteration to find root causes of agent failures, such as hallucination, missing data, or knowledge-source errors. He illustrated that iterative fixes can raise resolution rates significantly through targeted improvements.
+* High-quality telemetry and rapid iteration are essential to identify why agents fail and to improve resolution rates.
+
+Why Pilots Fail and the Need to Redesign Workflows
+Priya outlined three categories of failure: bolt-on automation without workflow redesign, lack of workflow enablement, and unavailable data or insufficient business integration. Arun reinforced that automating a bad workflow will not deliver enterprise value and that pilots must translate into scalable plans.
+* Redesigning workflows, not only automating conversations, is necessary to capture real downstream business impact.
+* Many pilots fail because they bolt on automation without workflow redesign or deep integration with security and data teams.
+
+From Doable to Done — Scale, Costs, and Operational Constraints
+The panel debated the gap between prototype feasibility and enterprise-wide deployment, noting that global scale, multilingual support, and complex tax/regulatory regimes remain hard problems. Panelists also raised concerns about token costs, expense visibility, and the need for partners committed to business outcomes.
+* Dogfooding internal AI products accelerates discovery of poor user experiences and drives product-market fit.
+* Technology primitives are improving, but scaling across geographies, languages, and regulatory regimes is the main obstacle.
+* Cost visibility and token management are operational issues enterprises must solve as AI usage grows.
+
+Practical Productivity and Closing Remarks
+The panel shared examples of internal AI usage to improve productivity, including agentic platforms that surface telemetry, submit PRs, and inter-agent communication. The session concluded with mutual appreciation and thanks.
+
+
+Action Items:
+
+* No action items generated
+
+
+Key Questions:
+
+* What does it actually take to get real value from AI in customer conversations and why is it hard?
+* Why do so many AI pilots fail to convert from POC to enterprise deployments?
+* What is the gap between "doable" AI demos and "done" enterprise-grade deployments?
+
+
+Notepad:
+
+* No notes

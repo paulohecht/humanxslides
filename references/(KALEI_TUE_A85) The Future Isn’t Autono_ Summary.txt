@@ -1,0 +1,58 @@
+(KALEI_TUE_A85) The Future Isn’t Autonomous, It’s Agentic - Featuring: Shishir Mehrotra (Superhuman), Jaime Teevan (Microsoft), Eoghan McCabe (Intercom), Iain Martin (Forbes)
+Tue, Apr 7, 2026
+
+Summary:
+
+The panel reviewed how agentic AI—systems that act as collaborators rather than pure automation—are being built and deployed across customer service, writing assistance, and enterprise workflows. Ian Martin introduced founders from Intercom, Superhuman, and Microsoft to share practical production experience and organizational effects. Owen McCabe described Intercom’s evolution from a human-centric messaging platform to deploying Finn, a verticalized service agent that now handles a growing share of customer interactions and contributes significant revenue; he explained Intercom’s use of specialized models, deterministic rules, and LLM-driven heuristics to reduce hallucinations and keep agents “on the rails,” while noting that AI revenue is growing faster than legacy SaaS revenue and some costs and churn remain to be recouped.
+
+Shishir Mehrotra positioned Grammarly/Superhuman as an always-on writing agent and described Superhuman Go as a platform for multiple specialized agents to operate within the same user surface. Jaime Teevan emphasized orchestration: humans and agents must coordinate, and conversation artifacts, prompts, grounding signals, and evaluation metrics should be treated as primary controls for managing agent behavior at scale. The panel concluded that agentic systems will increase cognitive skill requirements for many roles and that human accountability structures remain essential for verification and governance.
+
+
+Chapters & Topics:
+
+Opening and panel introduction
+The session opened with the event emcee introducing the theme of agentic AI and welcoming the panelists: Shishir Mehrotra (Superhuman), Jaime Teevan (Microsoft), Eoghan/Owen McCabe (Intercom), and moderator Iain/Ian Martin of Forbes. The emcee framed the discussion around AI moving beyond automation to act as collaborators across productivity and communication platforms.
+
+Moderator framing and relevance
+Ian Martin set the context by noting the industry focus on agents and introduced the panelists’ practical experience applying agents in business settings. He directed the first question to Owen McCabe about Intercom’s evolution and the role of Finn in replacing or augmenting human response work.
+
+Intercom’s journey to Finn and technical choices
+Owen McCabe traced Intercom’s history from a human-centric messaging platform to building market-first service agents, explaining that verticalized, post-trained models outperform general models for customer service. He described building agents as collections of models and procedures combining deterministic and nondeterministic logic to enforce policies and reduce hallucinations.
+* Intercom built Finn as a verticalized service agent and moved from legacy SaaS to an AI-first product strategy.
+* Intercom combines post-trained open-weight models and proprietary procedures to reduce hallucinations and control agent behavior.
+
+Business impact and revenue dynamics
+McCabe addressed organizational trade-offs, saying Intercom intentionally accepted cannibalization to capture larger agent-driven market value and convert seats into higher-margin AI revenue. He reported rapid AI revenue growth relative to SaaS and discussed partial recovery from churn and restructured revenue streams.
+* Converting human seats into agent-driven revenue can increase overall enterprise value even when it cannibalizes SaaS revenue.
+* Finn now represents about a quarter of Intercom’s revenue and has reached roughly $100 million in revenue.
+
+Superhuman’s platform strategy
+Shishir Mehrotra explained Superhuman’s rebranding and product suite, describing Grammarly as an agent that operates across many surfaces and announcing Superhuman Go to enable third-party agents to run alongside users in those surfaces. He illustrated use cases where multiple agents (sales, support, chief-of-staff) augment a user’s workflow in context.
+* Superhuman is turning Grammarly into a platform (Superhuman Go) so multiple agents can act in the same user surfaces alongside users.
+
+Agent orchestration and grounding (Microsoft)
+Jaime Teevan emphasized that the next challenge is orchestrating groups of agents and humans and that work artifacts should include prompts, grounding, evaluation measures, and processes for models to reason over. She noted models’ legibility enables explicit sharing of grounding and evaluation, and models can operate at scales humans cannot, enabling new event and knowledge workflows.
+* Microsoft’s priority is orchestrating groups of agents and humans and treating process artifacts (prompts, grounding, evaluations) as primary work artifacts.
+
+Guardrails, verification, and closing discussion
+The panel discussed verification and governance, contrasting objective verification in some domains with harder subjective evaluation in others, and stressed the need for human accountability and deterministic policy layers to constrain agents. The session closed with unanimous agreement that agentic systems will raise the skill level required in many jobs over the next five to ten years.
+* Effective guardrails require mixing deterministic policy logic with nondeterministic model behaviors and clear human accountability for outcomes.
+
+
+Action Items:
+
+* No action items generated
+
+
+Key Questions:
+
+* How did Intercom change when it introduced Finn and what effects did it have on customer interactions?
+* How long did it take Intercom to recoup losses from churn or refactoring after deploying Finn?
+* What did Superhuman learn from combining Grammarly and Superhuman and how are you re-engineering for an agentic era?
+* How does Microsoft approach helping agents collaborate with humans and other agents at scale?
+* How should organizations set guardrails for agent autonomy and execution with customers?
+
+
+Notepad:
+
+* No notes

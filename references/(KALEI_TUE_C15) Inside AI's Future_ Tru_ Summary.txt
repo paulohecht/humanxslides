@@ -1,0 +1,59 @@
+(KALEI_TUE_C15) Inside AI's Future: Trust, Culture, and Agentic Commerce - Featuring: Rajat Taneja (Visa), Questlove - (Questlove), Clare Duffy (CNN)
+Tue, Apr 7, 2026
+
+Summary:
+
+The panel examined the emergence of agentic commerce—AI systems that act and transact on users’ behalf—and the infrastructure and trust required for broad adoption. Speakers focused on technical building blocks including identity, permissions, tokenized credentials, transaction controls, merchant–consumer agent interactions, and mechanisms to authenticate and limit agents so consumers will feel safe delegating real-money transactions. Rajat Taneja described Visa’s current fraud, safety, and privacy tools and argued these capabilities must evolve to authenticate agents and enforce guardrails as delegated commerce grows, noting the shift from assistive to delegated AI will be gradual as infrastructure and trust mature.
+
+The discussion then moved to cultural and creative impacts, where Questlove emphasized preserving spontaneity, human mistakes, and ensuring creators receive proper credit and compensation when AI is trained on artistic work. Panelists agreed AI can augment discovery and productivity while changing roles and creating new jobs in areas such as model governance, training, and autonomous defenses, and they stressed the need to build ethical guardrails and control mechanisms before capabilities outpace governance.
+
+
+Chapters & Topics:
+
+Introduction and framing of agentic commerce
+The moderator introduced the topic of AI shifting from advice to action and framed the session as a conversation about trust, consent, and accountability in agentic commerce while welcoming Rajat Taneja and Questlove.
+
+Opening questions about timing and adoption
+Clare Duffy opened with questions about how soon agentic commerce will arrive and what is needed for wide adoption, prompting Rajat to outline the high-level requirement of trust and infrastructure for delegation of transactions.
+
+Visa’s technical perspective on trust, identity, and safety
+Rajat detailed how Visa’s decades-long payments infrastructure and fraud controls must evolve for agentic commerce, emphasizing identity, permissioning, tokenized credentials, transaction limits, and agent-to-agent ecosystems as necessary building blocks.
+* The shift from assistive AI to AI that makes purchases will be gradual and dependent on building consumer trust and infrastructure
+* Visa plans to adapt its existing fraud, privacy, and safety stack to support agent-to-agent commerce between consumers and merchants
+* Agentic commerce requires new identity, permissioning, and tokenized credential systems so agents can safely transact on behalf of consumers
+
+Cultural implications and the artist’s perspective
+The discussion shifted to cultural impacts, with Questlove arguing for the value of mistakes, spontaneity, and human creativity and advocating for creator credit and compensation when AI is trained on artistic work.
+* Panelists believe AI can augment serendipitous discovery while automating mundane shopping tasks, preserving human creativity when properly governed
+* Creators demand credit and compensation when their work is used to train AI models, analogous to sample clearance in music
+
+Workforce impact and new job categories
+The panel addressed worker anxiety and job transformation, predicting new roles in model governance, drift management, training, and autonomous defense architectures while acknowledging some existing roles will change.
+* AI will create new technical roles—model training, governance, drift management, and autonomous defenses—that do not exist today
+
+Creativity, accessibility, and practical use cases
+Questlove and Rajat discussed how AI can lower barriers to entry in creative fields, act as a creative condiment or partner, and speed prototyping and iterative work, while noting the importance of human taste and adaptation.
+
+Closing thoughts on hopes and risks
+In closing, Questlove emphasized analog warmth as a current limitation for full immersion, and Rajat highlighted excitement about AI’s potential in healthcare alongside concerns about controlling powerful systems and enforcing ethical guardrails.
+* Ethical control and a moral compass for powerful AI systems are urgent concerns that require hard work now
+
+
+Action Items:
+
+* No action items generated
+
+
+Key Questions:
+
+* How soon will agentic commerce—AI that crosses the internet to make purchases on our behalf—become widespread and what needs to happen for adoption?
+* What happens under the hood to ensure people can trust an AI agent not to go rogue when transacting?
+* Do you use AI in your creative work and what would make you trust it as a regular partner?
+* What new job types will emerge as AI changes work and security?
+* Will AI enable new entrants to the music industry who lack traditional musical gifts?
+* What are you most excited about and most nervous about in the AI era?
+
+
+Notepad:
+
+* No notes

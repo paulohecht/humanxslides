@@ -1,0 +1,63 @@
+(KALEI_TUE_B01) How Google Is Scaling Enterprise AI Adoption with Trust - Featuring: Francis deSouza (Google), Sharon Goldman (Fortune)
+Tue, Apr 7, 2026
+
+Summary:
+
+The meeting examined how enterprises are adopting AI and why trust and security must be central to that adoption. Francis deSouza said adoption is occurring faster than past technology waves, that both large and regulated organizations such as healthcare providers have moved many pilots into production quickly, and that this rapid rollout changes the threat landscape by creating new attack surfaces around models and agents. He highlighted risks including deepfake phishing and agentic attacks and framed customer priorities as understanding those risks and the defensive technologies required to mitigate them.
+
+The discussion moved to concrete implications and recommended responses. Participants agreed enterprises should develop AI and security strategies in parallel, select platforms with built-in security capabilities, and expect cybersecurity to be reshaped by AI-driven attackers and by agent-led defenses that remain coordinated by human teams. DeSouza recommended concentrating development and investment on five to seven high-impact use cases to generate ROI while enabling broad internal access to build workforce fluency, and he encouraged individuals to personally engage with AI tools before focusing company efforts on the small number of initiatives that will move the needle most.
+
+
+Chapters & Topics:
+
+Opening and event context
+The session opened with brief greetings and a setting statement that the speakers were at HumanX discussing enterprise AI adoption and trust. Sharon Goldman framed the topic by asking Francis deSouza to describe what Google Cloud customers are doing and why trust matters for adoption.
+
+Pace and makeup of AI adoption
+DeSouza explained that the current AI wave is distinct for its unusually rapid enterprise adoption, transition from pilots to production, and adoption by large and regulated organizations including healthcare providers like Seattle Children's Hospital, ASCO, and the Mayo Clinic. He stressed that these patterns differ from past waves that began with smaller digital-native adopters.
+* Enterprise AI adoption is proceeding faster than any previous technology wave and includes large and regulated organizations.
+
+Trust, risk areas, and new surface area
+The discussion moved to trust as central to AI deployment and to three customer concerns: a changed threat landscape, a new surface area of models/agents/data requiring protection, and new defensive techniques to address risks such as deepfakes and agentic attacks. DeSouza noted that AI rollouts require revamped data strategies because autonomous agents can discover legacy data stores.
+* Trust and security are foundational to every AI conversation because customers immediately shift to concerns about risks and governance.
+* Customers want clarity on the new threat landscape, the new AI surface area, and available defensive techniques for AI-specific attacks.
+
+Cybersecurity transformation and agent-led defense
+DeSouza described accelerating attack dynamics, including rapid attacker handoffs and increased attack volume, which make traditional human-led defense inadequate and necessitate AI/agent-led security capabilities coordinated by humans. He highlighted that security teams are evolving toward fleets of agents for pen testing, threat detection, and incident response.
+* Enterprises need synchronized AI and security strategies because cybersecurity will be fundamentally transformed by AI.
+* Adversaries now operate at machine speed with handoffs collapsing to seconds, making human-led defenses insufficient.
+
+Why enterprise adoption is hard; Google on Google AI learnings
+The speakers explored why adoption remains difficult despite benefits, noting that companies need both AI and security strategies moving together. DeSouza shared Google’s internal experience cataloging use cases and calculating ROI, including examples where AI generates significant value such as code generation, support automation, treasury optimization, and supply chain improvements.
+
+Deployment strategy — focused use cases plus broad fluency
+DeSouza recommended a two-pronged approach: concentrate on five to seven top-down use cases to achieve the largest ROI while also broadly rolling out tools so employees become bilingual in their function and AI, enabling experimentation and workforce fluency. He illustrated workforce fluency with hackathon examples where non-engineering teams performed strongly.
+* The most successful deployments focus on five to seven top-down use cases to capture ROI.
+* Organizations should also enable broad employee access so the workforce becomes fluent in AI alongside their functional skills.
+
+Healthcare examples and closing advice
+The conversation closed with healthcare examples of impactful AI usage, such as diagnosing genetic diseases, repurposing drugs, and reducing administrative burdens on clinicians. DeSouza’s final advice was two-part: personally engage with AI tools to understand them and, within organizations, pick the small set of high-impact initiatives to focus on.
+* Leaders must personally experiment with AI tools and then concentrate corporate efforts on the small set of initiatives that move the needle most.
+
+
+Action Items:
+
+* Meeting participant will develop an integrated AI and security strategy that advances at the same pace
+* Meeting participant will select and standardize on an AI platform with built-in security, governance, auditability, and transparency
+* Meeting participant will prioritize and implement five to seven top use cases to capture measurable ROI
+* Meeting participant will roll out AI tools broadly to employees to increase workforce AI fluency
+* Meeting participant will identify and focus the company on the small set of initiatives that will move the needle most
+
+
+Key Questions:
+
+* What challenges are customers facing around AI adoption and trust?
+* How should enterprises balance the speed of AI adoption with security concerns?
+* Why is this AI wave different from past technology waves?
+* Can you share an example of inspiring AI implementation in customers?
+* What single piece of adoption advice would you give leaders?
+
+
+Notepad:
+
+* No notes

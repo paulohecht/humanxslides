@@ -1,0 +1,57 @@
+(KALEI_TUE_E10) Bret Taylor’s View from the Top - Featuring: Bret Taylor (Sierra), Alex Heath (Sources)
+Tue, Apr 7, 2026
+
+Summary:
+
+The meeting reviewed Sierra’s strategy for productizing agents, safety, and enterprise adoption while noting Bret Taylor’s split responsibilities as Sierra CEO and OpenAI board chair, with mornings focused on OpenAI and afternoons on Sierra. Bret framed the discussion around Ghostwriter, Sierra’s new product, and argued agents can change how teams interact with systems of record by making many web-app UIs effectively “headless” and by shortening deployment timelines from months to weeks. He acknowledged that large customers will still require compliance, change management, and integration work.
+
+Participants discussed Sierra’s enterprise focus and regulatory expertise, citing rapid deployments for clients such as Nordstrom and Cigna and active work on EU and local AI rules for banks. Bret defended cautious release practices for powerful models and supported external red-teaming and researcher access as part of safety measures. He also expressed optimism that an applied-AI market for products like Ghostwriter will coexist with foundational-model research labs, and that the current technological moment justifies aggressive product development balanced with prudent safety and compliance steps.
+
+
+Chapters & Topics:
+
+Introductions and Day-to-Day Roles
+The session opened by introducing Bret Taylor and framing his roles at Sierra and OpenAI, and participants asked about his daily routine and how he prioritizes time between responsibilities. Bret described a schedule of OpenAI calls in early morning/evening and spending the majority of daytime on Sierra work, and expressed excitement about the industry’s rapid technological change.
+* Bret balances OpenAI board work in mornings/evenings with Sierra during the day and finds the dual role manageable
+
+Ghostwriter and the Agent Thesis
+The discussion turned to Sierra’s Ghostwriter agent product and Bret’s thesis that agents will replace many web-app interfaces, enabling users to request work instead of clicking through UIs. Bret provided examples of agent generation from customer transcripts and argued this approach yields dramatic speed and automation benefits for business workflows.
+* Bret believes agents will broadly replace traditional web app UIs and make many systems of record “headless”
+* Sierra’s Ghostwriter creates agents from data and can reduce implementation times from 12 months to weeks for enterprise use cases
+
+Enterprise Deployments and Regulatory Complexity
+Bret explained Sierra’s enterprise focus is driven by non-technical constraints like compliance, change management, and regulatory environments, citing deployments with Cigna and a major Spanish bank as examples. He positioned Sierra as a trusted advisor that helps complex organizations operationalize agents across global regulations and large call-center consolidations.
+* Sierra focuses on large enterprises because deployment involves significant compliance and change-management, not just technology
+
+Developer Practices and “Token Maxing”
+Participants explored the cultural practice of maximizing model usage (“token maxing”), and Bret critiqued leaderboard-style incentives while endorsing engineers leveraging AI to increase individual productivity and create harnesses that allow agents to act with less supervision. He cautioned about caricatures on social media but celebrated engineers pushing boundaries to discover new best practices.
+
+OpenAI Role, Market Layers, and Responsible Deployment
+Bret described handling conflicts of interest by recusal and mapped the market into layers: models, agent harnesses, and applied AI providers, arguing for more applied-AI startups to solve business problems rather than selling raw models. He advocated for responsible, collaborative release practices and external researcher access to address systemic safety risks like jailbreaks and vulnerability discovery.
+* Bret supports gated, collaborative releases and external red-teaming for models that could expose security vulnerabilities
+
+Reputational Questions and Leadership at OpenAI
+The interviewer raised recent reporting about OpenAI leadership, and Bret responded by affirming trust in Sam Altman’s character and praising mission-driven research labs and alignment work across organizations. Bret framed rivalry as productive and emphasized alignment and safety researchers as central contributors to societal benefit.
+
+External Legal Matters and the Future of Applied AI
+Bret declined to comment on ongoing litigation involving Elon Musk beyond calling the public claims baseless, and the conversation closed on market outlook where Bret expressed humility about predictions while arguing applied-AI firms and incumbents will coexist as technology lowers marginal software cost. He noted uncertainty about automation’s near-term effects on engineering employment and urged cautious humility in forecasting AI’s societal impacts.
+* He is bullish on an applied-AI market of domain-focused solutions distinct from foundational model providers
+
+
+Action Items:
+
+* Bret Taylor will give Alex Heath access to Ghostwriter
+
+
+Key Questions:
+
+* Will web apps disappear now that agents can perform user work?
+* If a model can find software vulnerabilities at scale, should its release be restricted?
+* Do you have confidence the governance concerns at OpenAI raised in recent reporting have been addressed?
+* Will Elon Musk settle his upcoming trial with Twitter?
+* A year from now, will labs move into applied deployments or will applied-AI startups scale instead?
+
+
+Notepad:
+
+* No notes

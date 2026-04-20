@@ -1,0 +1,55 @@
+(GROVE_WED_70E) The New Retail Experience Powered by AI - Featuring: Marcelo Cortes (Faire), Robert Brunner (Ammunition), Reece Rogers (WIRED)
+Wed, Apr 8, 2026
+
+Summary:
+
+The meeting opened with a panel framing how AI is appearing across retail design and shopping experiences, featuring Marcelo Cortez of Faire, Robert Brunner of Ammunition, and moderator Reece Rogers. Marcelo described Faire as a wholesale online marketplace that combines AI and data to match small physical retailers with brands, and that the business reduces buyer risk by offering credit and free returns while reporting improved metrics such as faster growth and lower return rates. Robert said AI has shortened design iteration cycles, expanded visualization and simulation capabilities, and shifted designers’ work toward higher-level judgment, curation, and emotional resonance instead of routine implementation.
+
+The conversation moved to product-level implications, where panelists argued embedded AI can enable devices to act more autonomously, reduce user friction, and make designers responsible for shaping user intent and trust. Marcelo contrasted prescribing purchases with Faire’s model of surfacing many curated matches to preserve store individuality while improving repeat purchase rates through better recommendations.
+
+
+Chapters & Topics:
+
+Introduction and Panel Setup
+The moderator opened by linking the prior talk to the retail-focused discussion and introduced the panelists Marcelo Cortez, Robert Brunner, and Reece Rogers. The stage was set for a conversation about AI's role across design and retail experiences.
+
+Casual Opening and Moderator Questions
+Panelists exchanged greetings and brief travel remarks before the moderator asked for company overviews to orient the audience. The conversation transitioned quickly to each speaker describing their organizations and missions.
+
+Faire’s Mission, Model, and Metrics
+Marcelo described Faire as a wholesale online marketplace focused on helping small physical retailers find unique products and connect with brands while using AI and data to improve efficiency. He explained Faire’s risk-reduction features—credit terms and free returns—and presented growth and return-rate improvements as evidence of effectiveness.
+* Faire is a wholesale marketplace for small physical retailers that uses AI and data to match stores with products and offers credit plus free returns to reduce buying risk
+* Faire reports accelerating growth over eight consecutive quarters and a decline in return rates from about 30% to single digits due to improved matching
+
+Ammunition’s Design Evolution with AI
+Robert traced design tooling shifts from manual drafting to CAD and now AI, arguing that AI reduces implementation load and elevates designers’ judgment and curation roles while noting accountability in material selection and limits in generating poetic detail. He described a hybrid process where AI generates possibilities and humans supply context and nuance.
+* AI is shortening design cycles and shifting designers’ work toward judgment, curation, and creating emotional resonance rather than routine tasks
+
+Product-Level Impacts and Physical AI
+The panel discussed how AI-enabled hardware can make decisions, act in the background, and remove friction from user interactions, which changes expectations and requires designers to address control, comfort, and intent-to-action flows. Robert illustrated the trajectory with examples like early smart appliances and robotics work.
+* Physical products infused with AI can act autonomously and reduce user friction, increasing the designer's responsibility for intent, trust, and psychological comfort
+
+Personalization, Curation, and Avoiding Homogenization
+Marcelo argued that AI does not inevitably homogenize retail because Faire surfaces many curated matches aligned to each store’s style rather than prescribing single "must-have" items, and that better matching increases customer retention and platform adoption. He emphasized that AI amplifies retailers’ taste and storytelling rather than replacing them.
+* Faire’s UX philosophy is to surface large curated assortments that match a store’s style rather than prescribe best-sellers, preserving distinctiveness while leveraging AI recommendations
+
+Designer Responsibilities and Skill Rankings
+Robert reinforced that designers must focus on emotional resonance and empathy, as AI cannot perceive joy or pain, making human understanding central to product success. In a closing exercise, Marcelo ranked taste first, storytelling second, and interpreting AI outputs third for local retailers’ future survival and growth.
+
+
+Action Items:
+
+* No action items generated
+
+
+Key Questions:
+
+* How has Faire’s last year been in terms of business performance?
+* How is AI changing Ammunition’s approach to design and how is the human element preserved?
+* How can small retailers leverage their data and AI to compete with larger retail giants?
+* Do you see AI as essential to building repeat customers for small retailers?
+
+
+Notepad:
+
+* No notes
