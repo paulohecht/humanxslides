@@ -7,7 +7,7 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    background: #1a1a1a;
+    background: radial-gradient(ellipse 140% 100% at 50% 30%, #1c1030 0%, #0c0a18 55%, #060608 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,6 @@
     font-family: 'Google Sans', 'Inter', 'Segoe UI', Arial, sans-serif;
   }
 
-  /* Outer wrapper keeps 16:9 ratio and scales to viewport */
   #stage {
     position: relative;
     width: 960px;
@@ -24,6 +23,11 @@
     transform-origin: center center;
     background: #fff;
     overflow: hidden;
+    border-radius: 6px;
+    box-shadow:
+      0 0 0 1px rgba(123,44,255,0.18),
+      0 40px 120px rgba(0,0,0,0.9),
+      0 0 120px rgba(123,44,255,0.08);
   }
 
   .slide {
@@ -34,154 +38,314 @@
     overflow: hidden;
   }
 
-  .slide.active { display: block; }
+  .slide.active {
+    display: block;
+    animation: fadeIn 0.32s ease;
+  }
 
-  /* Footer bar — dentro do stage, escala junto com o slide */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Progress bar */
+  #progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #7B2CFF 0%, #4fc3f7 100%);
+    transition: width 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 9999;
+    border-radius: 0 1px 1px 0;
+  }
+
+  /* Footer */
   #footer {
     position: absolute;
-    bottom: 12px;
-    right: 16px;
+    bottom: 10px;
+    right: 12px;
     display: flex;
     align-items: center;
     gap: 6px;
     z-index: 9999;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 14px;
+    padding: 3px 9px 3px 7px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
   }
 
   #ztg-logo {
-    height: 14px;
+    height: 13px;
     width: auto;
-    opacity: 0.85;
-    margin-right: 7px;
+    opacity: 0.65;
   }
 
   #counter {
-    font-size: 11px;
-    color: rgba(0,0,0,0.45);
-    min-width: 36px;
+    font-size: 10px;
+    color: rgba(0,0,0,0.38);
+    min-width: 30px;
     text-align: center;
     letter-spacing: 0.5px;
+    font-variant-numeric: tabular-nums;
   }
+
+  /* Navigation arrows — outside stage, fixed */
+  .nav-btn {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50%;
+    color: rgba(255,255,255,0.4);
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.22s ease;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    opacity: 0;
+    z-index: 9999;
+    outline: none;
+    font-family: inherit;
+    line-height: 1;
+  }
+  #nav-prev { left: 18px; }
+  #nav-next { right: 18px; }
+  body:hover .nav-btn { opacity: 1; }
+  .nav-btn:hover {
+    background: rgba(123,44,255,0.2);
+    border-color: rgba(123,44,255,0.4);
+    color: #fff;
+    transform: translateY(-50%) scale(1.08);
+  }
+  .nav-btn:active { transform: translateY(-50%) scale(0.95); }
 
   /* Present button */
   #present-btn {
     position: fixed;
-    top: 18px;
-    right: 24px;
+    top: 16px;
+    right: 20px;
     z-index: 9999;
-    background: rgba(30,30,30,0.75);
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 20px;
-    color: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.11);
+    border-radius: 22px;
+    color: rgba(255,255,255,0.6);
     font-size: 11px;
-    padding: 6px 14px;
+    padding: 7px 16px;
     cursor: pointer;
     letter-spacing: 0.5px;
-    transition: color 0.15s, background 0.15s;
+    transition: all 0.2s ease;
     font-family: inherit;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
   }
-  #present-btn:hover { color: #fff; background: rgba(60,60,60,0.9); }
+  #present-btn:hover {
+    color: #fff;
+    background: rgba(123,44,255,0.22);
+    border-color: rgba(123,44,255,0.38);
+  }
 
-  /* Em fullscreen esconde só o botão Apresentar */
   :fullscreen #present-btn,
   :-webkit-full-screen #present-btn { display: none; }
+  :fullscreen .nav-btn,
+  :-webkit-full-screen .nav-btn { display: none; }
 </style>
 </head>
 <body>
 
 <div id="stage">
 
+  <!-- SLIDE 1: Title -->
   <div class="slide active" data-index="0" style="isolation:isolate;">
-<img src="assets/slide1_Google_Shape_55_p13.png" style="position:absolute;left:0px;top:0px;width:960px;height:540px;z-index:1;filter:grayscale(1) brightness(0.45);">
-<div style="position:absolute;left:0;top:0;width:960px;height:540px;z-index:2;background:#7B2CFF;mix-blend-mode:color;opacity:0.92;"></div>
-<img src="assets/slide1_Google_Shape_57_p13.png" style="position:absolute;left:271px;top:84px;width:258px;height:63px;z-index:3;">
-<div style="position:absolute;left:550px;top:76px;width:148px;height:79px;z-index:4;display:flex;align-items:center;"><span style="font-size:37pt;font-weight:700;color:#FFFFFF">2026</span></div>
-<div style="position:absolute;left:0;top:157px;width:960px;height:196px;z-index:4;display:flex;align-items:center;justify-content:center;text-align:center;"><span style="font-size:23pt;color:#FFFFFF;line-height:1.2">Os Insights de São Francisco que vão Impactar o Futuro da IA</span></div>
-<img src="assets/slide1_Google_Shape_59_p13.png" style="position:absolute;left:616px;top:415px;width:101px;height:101px;z-index:4;border-radius:50%;object-fit:cover;">
-<div style="position:absolute;left:735px;top:407px;width:315px;height:75px;z-index:4;"><div style="font-size:18pt;font-weight:700;color:#FFFFFF;line-height:1.1">Paulo Hecht</div><div style="font-size:13pt;color:#FFFFFF;opacity:0.85">CPO & Co-Founder</div></div>
-<img src="assets/slide1_Google_Shape_61_p13.png" style="position:absolute;left:746px;top:482px;width:181px;height:36px;z-index:5;">
+    <img src="assets/slide1_Google_Shape_55_p13.png" style="position:absolute;left:0px;top:0px;width:960px;height:540px;z-index:1;filter:grayscale(1) brightness(0.45);">
+    <div style="position:absolute;left:0;top:0;width:960px;height:540px;z-index:2;background:#7B2CFF;mix-blend-mode:color;opacity:0.92;"></div>
+    <img src="assets/slide1_Google_Shape_57_p13.png" style="position:absolute;left:271px;top:84px;width:258px;height:63px;z-index:3;">
+    <div style="position:absolute;left:550px;top:76px;width:148px;height:79px;z-index:4;display:flex;align-items:center;"><span style="font-size:37pt;font-weight:700;color:#FFFFFF">2026</span></div>
+    <div style="position:absolute;left:0;top:157px;width:960px;height:196px;z-index:4;display:flex;align-items:center;justify-content:center;text-align:center;"><span style="font-size:23pt;color:#FFFFFF;line-height:1.2">Os Insights de São Francisco que vão Impactar o Futuro da IA</span></div>
+    <img src="assets/slide1_Google_Shape_59_p13.png" style="position:absolute;left:616px;top:415px;width:101px;height:101px;z-index:4;border-radius:50%;object-fit:cover;">
+    <div style="position:absolute;left:735px;top:407px;width:315px;height:75px;z-index:4;"><div style="font-size:18pt;font-weight:700;color:#FFFFFF;line-height:1.1">Paulo Hecht</div><div style="font-size:13pt;color:#FFFFFF;opacity:0.85">CPO & Co-Founder</div></div>
+    <img src="assets/slide1_Google_Shape_61_p13.png" style="position:absolute;left:746px;top:482px;width:181px;height:36px;z-index:5;">
   </div>
 
+  <!-- SLIDE 2: Full image -->
   <div class="slide" data-index="1">
-<img src="assets/slide2_Google_Shape_67_p14.png" style="position:absolute;left:0px;top:0px;width:960px;height:540px;z-index:1;">
+    <img src="assets/slide2_Google_Shape_67_p14.png" style="position:absolute;left:0px;top:0px;width:960px;height:540px;z-index:1;">
   </div>
 
+  <!-- SLIDE 3: Boardy screenshots -->
   <div class="slide" data-index="2">
-<div style="position:absolute;left:17px;top:22px;width:594px;height:90px;z-index:2;"><div style="font-size:22pt;font-weight:700;color:#000;line-height:1.2">Começou antes de começar…</div><div style="font-size:22pt;color:#000;line-height:1.2">Boardy: O agente que me telefonou!</div></div>
-<img src="assets/slide3_Google_Shape_74_p15.png" style="position:absolute;left:123px;top:137px;width:148px;height:321px;z-index:2;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
-<img src="assets/slide3_Google_Shape_76_p15.png" style="position:absolute;left:312px;top:143px;width:147px;height:321px;z-index:2;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
-<img src="assets/slide3_Google_Shape_75_p15.png" style="position:absolute;left:501px;top:143px;width:148px;height:321px;z-index:2;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
-<img src="assets/slide3_Google_Shape_77_p15.png" style="position:absolute;left:690px;top:143px;width:147px;height:321px;z-index:2;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
+    <div style="position:absolute;left:17px;top:22px;width:594px;height:90px;z-index:2;"><div style="font-size:22pt;font-weight:700;color:#000;line-height:1.2">Começou antes de começar…</div><div style="font-size:22pt;color:#000;line-height:1.2">Boardy: O agente que me telefonou!</div></div>
+    <img src="assets/slide3_Google_Shape_74_p15.png" style="position:absolute;left:123px;top:137px;width:148px;height:321px;z-index:2;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
+    <img src="assets/slide3_Google_Shape_76_p15.png" style="position:absolute;left:312px;top:143px;width:147px;height:321px;z-index:2;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
+    <img src="assets/slide3_Google_Shape_75_p15.png" style="position:absolute;left:501px;top:143px;width:148px;height:321px;z-index:2;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
+    <img src="assets/slide3_Google_Shape_77_p15.png" style="position:absolute;left:690px;top:143px;width:147px;height:321px;z-index:2;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.35);">
   </div>
 
-  <div class="slide" data-index="3">
-<div style="position:absolute;left:33px;top:226px;width:895px;height:88px;z-index:2;display:flex;align-items:center;"><span style="font-size:36pt;color:#000000">O "Futuro" está chegando</span></div>
+  <!-- SLIDE 4: Chapter 1 — O Futuro está chegando -->
+  <div class="slide" data-index="3" style="background:linear-gradient(135deg,#0e0c1c 0%,#1a1038 55%,#0b0b17 100%);">
+    <div style="position:absolute;left:0;top:0;width:5px;height:540px;z-index:2;background:linear-gradient(180deg,#7B2CFF 0%,#4fc3f7 100%);"></div>
+    <div style="position:absolute;right:-90px;top:-90px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(123,44,255,0.12) 0%,transparent 70%);z-index:1;pointer-events:none;"></div>
+    <div style="position:absolute;left:30px;bottom:-70px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(79,195,247,0.07) 0%,transparent 70%);z-index:1;pointer-events:none;"></div>
+    <div style="position:absolute;left:52px;top:0;bottom:0;right:40px;display:flex;align-items:center;z-index:3;">
+      <div>
+        <div style="font-size:10pt;color:rgba(123,44,255,0.88);letter-spacing:3.5px;text-transform:uppercase;font-weight:600;margin-bottom:20px;">Capítulo 1</div>
+        <div style="font-size:45pt;color:#FFFFFF;font-weight:300;line-height:1.05;letter-spacing:-0.02em;">O "Futuro"<br>está chegando</div>
+      </div>
+    </div>
   </div>
 
+  <!-- SLIDE 5: Ray Kurzweil -->
   <div class="slide" data-index="4">
-<img src="assets/crop_s5_kurzweil.png" style="position:absolute;left:0px;top:0px;width:430px;height:540px;z-index:1;object-fit:cover;object-position:center top;">
-<div style="position:absolute;left:450px;top:20px;width:477px;height:70px;z-index:2;"><div style="font-size:22pt;font-weight:700;color:#000">Ray Kurzweil</div><div style="font-size:13pt;color:#000;margin-top:4px">futurista</div></div>
-<div style="position:absolute;left:450px;top:95px;width:499px;height:271px;z-index:2;"><div style="font-size:16pt;color:#0A0A0A;line-height:1.45"><div style="margin-bottom:8px;">•&nbsp;AGI chega até 2029!</div><div style="margin-bottom:8px;">•&nbsp;Crescimento exponencial de compute desde 1939 (hardware + software se compõem)</div><div style="margin-bottom:8px;">•&nbsp;Vamos ver controle neural não-invasivo nos anos 2030</div><div style="margin-bottom:8px;">•&nbsp;"A maioria das pessoas subestimou o ritmo porque não pensa de forma exponencial"</div></div></div>
+    <img src="assets/crop_s5_kurzweil.png" style="position:absolute;left:0px;top:0px;width:430px;height:540px;z-index:1;object-fit:cover;object-position:center top;">
+    <div style="position:absolute;left:430px;top:0;width:1px;height:540px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.08) 20%,rgba(0,0,0,0.08) 80%,transparent);z-index:2;"></div>
+    <div style="position:absolute;left:452px;top:28px;width:477px;z-index:3;">
+      <div style="font-size:22pt;font-weight:700;color:#111;letter-spacing:-0.01em;">Ray Kurzweil</div>
+      <div style="font-size:12pt;color:#7B2CFF;margin-top:5px;font-weight:500;letter-spacing:0.3px;">futurista</div>
+    </div>
+    <div style="position:absolute;left:452px;top:105px;width:480px;z-index:3;">
+      <div style="font-size:15.5pt;color:#1a1a1a;line-height:1.5;">
+        <div style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#7B2CFF;font-weight:700;">→</span><span>AGI chega até 2029!</span></div>
+        <div style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#7B2CFF;font-weight:700;">→</span><span>Crescimento exponencial de compute desde 1939 (hardware + software se compõem)</span></div>
+        <div style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#7B2CFF;font-weight:700;">→</span><span>Vamos ver controle neural não-invasivo nos anos 2030</span></div>
+        <div style="display:flex;gap:10px;"><span style="color:#7B2CFF;font-weight:700;">→</span><span style="font-style:italic;color:#444;">"A maioria das pessoas subestimou o ritmo porque não pensa de forma exponencial"</span></div>
+      </div>
+    </div>
   </div>
 
+  <!-- SLIDE 6: Exponential perspective -->
   <div class="slide" data-index="5">
-<div style="position:absolute;left:17px;top:22px;width:594px;height:55px;z-index:2;display:flex;align-items:center;"><span style="font-size:22pt;font-weight:700;color:#000">A perspectiva da exponencialidade</span></div>
-<img src="assets/slide6_Google_Shape_101_p18.png" style="position:absolute;left:74px;top:148px;width:198px;height:165px;z-index:2;">
-<img src="assets/slide6_Google_Shape_96_p18.png" style="position:absolute;left:311px;top:168px;width:291px;height:144px;z-index:2;">
-<img src="assets/slide6_Google_Shape_99_p18.png" style="position:absolute;left:617px;top:159px;width:243px;height:162px;z-index:2;">
-<div style="position:absolute;left:167px;top:361px;width:626px;height:63px;z-index:2;display:flex;align-items:center;"><span style="font-size:27pt;font-weight:700;color:#000">2<sup style="font-size:0.6em">64</sup> = 18.446.744.073.709.551.615</span></div>
+    <div style="position:absolute;left:17px;top:22px;width:594px;height:55px;z-index:2;display:flex;align-items:center;"><span style="font-size:22pt;font-weight:700;color:#000">A perspectiva da exponencialidade</span></div>
+    <img src="assets/slide6_Google_Shape_101_p18.png" style="position:absolute;left:74px;top:148px;width:198px;height:165px;z-index:2;">
+    <img src="assets/slide6_Google_Shape_96_p18.png" style="position:absolute;left:311px;top:168px;width:291px;height:144px;z-index:2;">
+    <img src="assets/slide6_Google_Shape_99_p18.png" style="position:absolute;left:617px;top:159px;width:243px;height:162px;z-index:2;">
+    <div style="position:absolute;left:167px;top:361px;width:626px;height:63px;z-index:2;display:flex;align-items:center;"><span style="font-size:27pt;font-weight:700;color:#000">2<sup style="font-size:0.6em">64</sup> = 18.446.744.073.709.551.615</span></div>
   </div>
 
+  <!-- SLIDE 7: Al Gore -->
   <div class="slide" data-index="6">
-<img src="assets/crop_s7_gore_photo.jpg" style="position:absolute;left:0px;top:0px;width:430px;height:540px;z-index:1;object-fit:cover;object-position:center top;">
-<div style="position:absolute;left:450px;top:20px;width:477px;height:75px;z-index:3;"><div style="font-size:22pt;font-weight:700;color:#000">Al Gore</div><div style="font-size:13pt;color:#000;margin-top:4px">45º vice presidente dos EUA</div></div>
-<div style="position:absolute;left:450px;top:123px;width:499px;height:248px;z-index:3;"><div style="font-size:16pt;color:#0A0A0A;line-height:1.45"><div style="margin-bottom:8px;">•&nbsp;IA é o "momento copernicano" da humanidade - tecnologia mais consequente já criada</div><div style="margin-bottom:8px;">•&nbsp;Não faz sentido pausar. A posição de Gore: em vez de frear, precisamos "mirar mais alto"</div><div style="margin-bottom:8px;">•&nbsp;Constituição pública para modelos pioneiros - transparência, accountability, governança</div></div></div>
+    <img src="assets/crop_s7_gore_photo.jpg" style="position:absolute;left:0px;top:0px;width:430px;height:540px;z-index:1;object-fit:cover;object-position:center top;">
+    <div style="position:absolute;left:430px;top:0;width:1px;height:540px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.08) 20%,rgba(0,0,0,0.08) 80%,transparent);z-index:2;"></div>
+    <div style="position:absolute;left:452px;top:28px;width:477px;z-index:3;">
+      <div style="font-size:22pt;font-weight:700;color:#111;letter-spacing:-0.01em;">Al Gore</div>
+      <div style="font-size:12pt;color:#7B2CFF;margin-top:5px;font-weight:500;letter-spacing:0.3px;">45º vice presidente dos EUA</div>
+    </div>
+    <div style="position:absolute;left:452px;top:105px;width:480px;z-index:3;">
+      <div style="font-size:15.5pt;color:#1a1a1a;line-height:1.5;">
+        <div style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#7B2CFF;font-weight:700;">→</span><span>IA é o "momento copernicano" da humanidade — tecnologia mais consequente já criada</span></div>
+        <div style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#7B2CFF;font-weight:700;">→</span><span>Não faz sentido pausar. Em vez de frear, precisamos "mirar mais alto"</span></div>
+        <div style="display:flex;gap:10px;"><span style="color:#7B2CFF;font-weight:700;">→</span><span>Constituição pública para modelos pioneiros — transparência, accountability, governança</span></div>
+      </div>
+    </div>
   </div>
 
+  <!-- SLIDE 8: Jensen Huang -->
   <div class="slide" data-index="7">
-<img src="assets/crop_s8_jensen_photo2.png" style="position:absolute;left:0px;top:0px;width:430px;height:540px;z-index:1;object-fit:cover;object-position:center top;">
-<img src="assets/slide8_Google_Shape_120_p20.png" style="position:absolute;left:864px;top:-8px;width:102px;height:102px;z-index:3;">
-<div style="position:absolute;left:450px;top:20px;width:477px;height:111px;z-index:4;"><div style="font-size:22pt;font-weight:700;color:#000">Jensen Huang</div><div style="font-size:13pt;color:#000;margin-top:4px">ceo @ nvidia</div></div>
-<div style="position:absolute;left:450px;top:123px;width:499px;height:293px;z-index:4;"><div style="font-size:16pt;color:#0A0A0A;line-height:1.45"><div style="margin-bottom:8px;">•&nbsp;5 camadas: Energia, Chips, Infra, Modelos, Aplicação.</div><div style="margin-bottom:8px;">•&nbsp;Aplicação é onde está o maior impacto. IA vira ferramenta.</div><div style="margin-bottom:8px;">•&nbsp;3 ondas: Geração de conteúdo, Raciocínio Contextualizado, Realizar Tarefas.</div><div style="margin-bottom:8px;">•&nbsp;"Em 1 a 2 anos, um CEO não-técnico poderá descrever um problema e a IA executará do início ao fim."</div></div></div>
+    <img src="assets/crop_s8_jensen_photo2.png" style="position:absolute;left:0px;top:0px;width:430px;height:540px;z-index:1;object-fit:cover;object-position:center top;">
+    <div style="position:absolute;left:430px;top:0;width:1px;height:540px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.08) 20%,rgba(0,0,0,0.08) 80%,transparent);z-index:2;"></div>
+    <img src="assets/slide8_Google_Shape_120_p20.png" style="position:absolute;left:864px;top:-8px;width:102px;height:102px;z-index:4;">
+    <div style="position:absolute;left:452px;top:28px;width:477px;z-index:4;">
+      <div style="font-size:22pt;font-weight:700;color:#111;letter-spacing:-0.01em;">Jensen Huang</div>
+      <div style="font-size:12pt;color:#7B2CFF;margin-top:5px;font-weight:500;letter-spacing:0.3px;">CEO @ NVIDIA</div>
+    </div>
+    <div style="position:absolute;left:452px;top:105px;width:480px;z-index:4;">
+      <div style="font-size:15.5pt;color:#1a1a1a;line-height:1.5;">
+        <div style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#7B2CFF;font-weight:700;">→</span><span>5 camadas: Energia, Chips, Infra, Modelos, Aplicação</span></div>
+        <div style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#7B2CFF;font-weight:700;">→</span><span>Aplicação é onde está o maior impacto. IA vira ferramenta</span></div>
+        <div style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#7B2CFF;font-weight:700;">→</span><span>3 ondas: Geração de conteúdo → Raciocínio Contextualizado → Realizar Tarefas</span></div>
+        <div style="display:flex;gap:10px;"><span style="color:#7B2CFF;font-weight:700;">→</span><span style="font-style:italic;color:#444;">"Em 1–2 anos, um CEO não-técnico poderá descrever um problema e a IA executará do início ao fim."</span></div>
+      </div>
+    </div>
   </div>
 
-  <div class="slide" data-index="8">
-<div style="position:absolute;left:33px;top:226px;width:895px;height:88px;z-index:2;display:flex;align-items:center;"><span style="font-size:36pt;color:#000000">O "Presente" é conversacional</span></div>
+  <!-- SLIDE 9: Chapter 2 — O Presente é conversacional -->
+  <div class="slide" data-index="8" style="background:linear-gradient(135deg,#0e0c1c 0%,#1a1038 55%,#0b0b17 100%);">
+    <div style="position:absolute;left:0;top:0;width:5px;height:540px;z-index:2;background:linear-gradient(180deg,#7B2CFF 0%,#4fc3f7 100%);"></div>
+    <div style="position:absolute;right:-90px;top:-90px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(123,44,255,0.12) 0%,transparent 70%);z-index:1;pointer-events:none;"></div>
+    <div style="position:absolute;left:30px;bottom:-70px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(79,195,247,0.07) 0%,transparent 70%);z-index:1;pointer-events:none;"></div>
+    <div style="position:absolute;left:52px;top:0;bottom:0;right:40px;display:flex;align-items:center;z-index:3;">
+      <div>
+        <div style="font-size:10pt;color:rgba(123,44,255,0.88);letter-spacing:3.5px;text-transform:uppercase;font-weight:600;margin-bottom:20px;">Capítulo 2</div>
+        <div style="font-size:45pt;color:#FFFFFF;font-weight:300;line-height:1.05;letter-spacing:-0.02em;">O "Presente"<br>é conversacional</div>
+      </div>
+    </div>
   </div>
 
+  <!-- SLIDE 10: Michael Truell / Cursor -->
   <div class="slide" data-index="9">
-<img src="assets/crop_s10_truell_photo.png" style="position:absolute;left:0px;top:0px;width:430px;height:540px;z-index:1;object-fit:cover;object-position:center top;">
-<img src="assets/slide10_Google_Shape_136_p22.png" style="position:absolute;left:828px;top:15px;width:121px;height:30px;z-index:3;">
-<div style="position:absolute;left:450px;top:20px;width:477px;height:111px;z-index:4;"><div style="font-size:22pt;font-weight:700;color:#000">Michael Truell</div><div style="font-size:13pt;color:#000;margin-top:4px">ceo @ cursor</div></div>
-<div style="position:absolute;left:450px;top:123px;width:499px;height:279px;z-index:4;"><div style="font-size:16pt;color:#0A0A0A;line-height:1.45"><div style="margin-bottom:8px;">•&nbsp;Objetivo do Cursor é ser a melhor maneira de programar com IA, em um movimento de ferramentas de produtividade para agentes autônomos.</div><div style="margin-bottom:8px;">•&nbsp;65–70% do código de clientes enterprise já é gerado por IA</div><div style="margin-bottom:8px;">•&nbsp;"Podemos esperar automações equivalentes nas áreas de finanças, recrutamento, legal e outras funções."</div></div></div>
+    <img src="assets/crop_s10_truell_photo.png" style="position:absolute;left:0px;top:0px;width:430px;height:540px;z-index:1;object-fit:cover;object-position:center top;">
+    <div style="position:absolute;left:430px;top:0;width:1px;height:540px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.08) 20%,rgba(0,0,0,0.08) 80%,transparent);z-index:2;"></div>
+    <img src="assets/slide10_Google_Shape_136_p22.png" style="position:absolute;left:828px;top:15px;width:121px;height:30px;z-index:4;">
+    <div style="position:absolute;left:452px;top:28px;width:477px;z-index:4;">
+      <div style="font-size:22pt;font-weight:700;color:#111;letter-spacing:-0.01em;">Michael Truell</div>
+      <div style="font-size:12pt;color:#7B2CFF;margin-top:5px;font-weight:500;letter-spacing:0.3px;">CEO @ Cursor</div>
+    </div>
+    <div style="position:absolute;left:452px;top:105px;width:480px;z-index:4;">
+      <div style="font-size:15.5pt;color:#1a1a1a;line-height:1.5;">
+        <div style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#7B2CFF;font-weight:700;">→</span><span>Cursor move de ferramentas de produtividade para agentes autônomos</span></div>
+        <div style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#7B2CFF;font-weight:700;">→</span><span>65–70% do código de clientes enterprise já é gerado por IA</span></div>
+        <div style="display:flex;gap:10px;"><span style="color:#7B2CFF;font-weight:700;">→</span><span style="font-style:italic;color:#444;">"Podemos esperar automações equivalentes em finanças, recrutamento, legal e outras funções."</span></div>
+      </div>
+    </div>
   </div>
 
+  <!-- SLIDE 11: Vibe coding -->
   <div class="slide" data-index="10">
-<div style="position:absolute;left:17px;top:22px;width:594px;height:55px;z-index:2;display:flex;align-items:center;"><span style="font-size:22pt;font-weight:700;color:#000">Mas o que significa vibe coding?</span></div>
-<img src="assets/slide11_Google_Shape_144_p23.png" style="position:absolute;left:203px;top:86px;width:554px;height:366px;z-index:2;">
-<div style="position:absolute;left:203px;top:462px;width:554px;z-index:3;display:flex;align-items:center;justify-content:center;gap:8px;"><span style="font-size:11pt;color:rgba(0,0,0,0.35);letter-spacing:1px;text-transform:uppercase">↗ mudar para o Cursor</span></div>
+    <div style="position:absolute;left:17px;top:22px;width:594px;height:55px;z-index:2;display:flex;align-items:center;"><span style="font-size:22pt;font-weight:700;color:#000">Mas o que significa vibe coding?</span></div>
+    <img src="assets/slide11_Google_Shape_144_p23.png" style="position:absolute;left:203px;top:86px;width:554px;height:366px;z-index:2;">
+    <div style="position:absolute;left:203px;top:462px;width:554px;z-index:3;display:flex;align-items:center;justify-content:center;gap:8px;"><span style="font-size:11pt;color:rgba(0,0,0,0.35);letter-spacing:1px;text-transform:uppercase">↗ mudar para o Cursor</span></div>
   </div>
 
+  <!-- SLIDE 12: Full image -->
   <div class="slide" data-index="11">
-<img src="assets/slide12_Google_Shape_150_p24.png" style="position:absolute;left:16px;top:16px;width:406px;height:508px;z-index:2;">
+    <img src="assets/slide12_Google_Shape_150_p24.png" style="position:absolute;left:16px;top:16px;width:406px;height:508px;z-index:2;">
   </div>
 
+  <!-- SLIDE 13: Logos -->
   <div class="slide" data-index="12">
-<img src="assets/slide13_Google_Shape_156_p25.png" style="position:absolute;left:116px;top:170px;width:189px;height:51px;z-index:2;">
-<img src="assets/slide13_Google_Shape_157_p25.png" style="position:absolute;left:521px;top:97px;width:242px;height:63px;z-index:2;">
+    <img src="assets/slide13_Google_Shape_156_p25.png" style="position:absolute;left:116px;top:170px;width:189px;height:51px;z-index:2;">
+    <img src="assets/slide13_Google_Shape_157_p25.png" style="position:absolute;left:521px;top:97px;width:242px;height:63px;z-index:2;">
   </div>
 
-  <div class="slide" data-index="13">
+  <!-- SLIDE 14: Breather -->
+  <div class="slide" data-index="13" style="background:linear-gradient(135deg,#0e0c1c 0%,#14102e 50%,#0a0a16 100%);">
+    <div style="position:absolute;right:-110px;bottom:-110px;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(123,44,255,0.08) 0%,transparent 70%);z-index:1;pointer-events:none;"></div>
+    <div style="position:absolute;left:-60px;top:-60px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(79,195,247,0.05) 0%,transparent 70%);z-index:1;pointer-events:none;"></div>
   </div>
 
-  <div class="slide" data-index="14">
-<div style="position:absolute;left:33px;top:226px;width:895px;height:88px;z-index:2;display:flex;align-items:center;"><span style="font-size:36pt;color:#000000">Relacionamento é agêntico</span></div>
+  <!-- SLIDE 15: Chapter 3 — Relacionamento é agêntico -->
+  <div class="slide" data-index="14" style="background:linear-gradient(135deg,#0e0c1c 0%,#1a1038 55%,#0b0b17 100%);">
+    <div style="position:absolute;left:0;top:0;width:5px;height:540px;z-index:2;background:linear-gradient(180deg,#7B2CFF 0%,#4fc3f7 100%);"></div>
+    <div style="position:absolute;right:-90px;top:-90px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(123,44,255,0.12) 0%,transparent 70%);z-index:1;pointer-events:none;"></div>
+    <div style="position:absolute;left:30px;bottom:-70px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(79,195,247,0.07) 0%,transparent 70%);z-index:1;pointer-events:none;"></div>
+    <div style="position:absolute;left:52px;top:0;bottom:0;right:40px;display:flex;align-items:center;z-index:3;">
+      <div>
+        <div style="font-size:10pt;color:rgba(123,44,255,0.88);letter-spacing:3.5px;text-transform:uppercase;font-weight:600;margin-bottom:20px;">Capítulo 3</div>
+        <div style="font-size:45pt;color:#FFFFFF;font-weight:300;line-height:1.05;letter-spacing:-0.02em;">Relacionamento<br>é agêntico</div>
+      </div>
+    </div>
   </div>
 
+  <!-- Progress bar -->
+  <div id="progress"></div>
+
+  <!-- Footer -->
   <div id="footer">
     <img id="ztg-logo" src="assets/ztg-logo.png" alt="ZTGrowth">
     <span id="counter">1 / 15</span>
   </div>
 </div>
+
+<!-- Navigation arrows -->
+<button class="nav-btn" id="nav-prev" onclick="go(-1)">&#8592;</button>
+<button class="nav-btn" id="nav-next" onclick="go(1)">&#8594;</button>
 
 <button id="present-btn" onclick="enterPresent()">⛶ Apresentar</button>
 
@@ -203,6 +367,7 @@
     cur = ((n % total) + total) % total;
     slides[cur].classList.add('active');
     document.getElementById('counter').textContent = (cur + 1) + ' / ' + total;
+    document.getElementById('progress').style.width = ((cur + 1) / total * 100).toFixed(2) + '%';
     document.getElementById('footer').style.visibility = cur < 2 ? 'hidden' : 'visible';
     if (pushState) {
       const url = cur === 0 ? location.pathname : `${location.pathname}?slide=${cur + 1}`;
@@ -219,13 +384,20 @@
   show(initialSlide - 1, false);
 
   document.addEventListener('keydown', e => {
-    if (['ArrowRight','ArrowDown',' '].includes(e.key)) { e.preventDefault(); go(1); }
-    if (['ArrowLeft','ArrowUp'].includes(e.key)) { e.preventDefault(); go(-1); }
+    if (['ArrowRight', 'ArrowDown', ' '].includes(e.key)) { e.preventDefault(); go(1); }
+    if (['ArrowLeft', 'ArrowUp'].includes(e.key)) { e.preventDefault(); go(-1); }
     if (e.key === 'Escape' && document.fullscreenElement) document.exitFullscreen();
   });
 
   document.getElementById('stage').addEventListener('click', e => {
     go(e.offsetX > 480 ? 1 : -1);
+  });
+
+  let touchStartX = 0;
+  document.getElementById('stage').addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  document.getElementById('stage').addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 40) go(dx < 0 ? 1 : -1);
   });
 
   function enterPresent() {
