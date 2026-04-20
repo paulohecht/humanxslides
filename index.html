@@ -173,6 +173,7 @@
     <img src="assets/slide1_Google_Shape_59_p13.png" style="position:absolute;left:616px;top:415px;width:101px;height:101px;z-index:4;border-radius:50%;object-fit:cover;">
     <div style="position:absolute;left:735px;top:407px;width:315px;height:75px;z-index:4;"><div style="font-size:18pt;font-weight:700;color:#FFFFFF;line-height:1.1">Paulo Hecht</div><div style="font-size:13pt;color:#FFFFFF;opacity:0.85">CPO & Co-Founder</div></div>
     <img src="assets/slide1_Google_Shape_61_p13.png" style="position:absolute;left:746px;top:482px;width:181px;height:36px;z-index:5;">
+    <div style="position:absolute;left:24px;bottom:18px;z-index:5;font-size:9.5pt;color:rgba(255,255,255,0.35);letter-spacing:1.5px;font-weight:400;">v1.2</div>
   </div>
 
   <!-- SLIDE 2: Full image -->
@@ -389,16 +390,32 @@
     if (e.key === 'Escape' && document.fullscreenElement) document.exitFullscreen();
   });
 
+  let lastTouchTime = 0;
+
   document.getElementById('stage').addEventListener('click', e => {
+    if (Date.now() - lastTouchTime < 600) return; // ignore ghost click after touch
     go(e.offsetX > 480 ? 1 : -1);
   });
 
   let touchStartX = 0;
-  document.getElementById('stage').addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
-  document.getElementById('stage').addEventListener('touchend', e => {
-    const dx = e.changedTouches[0].clientX - touchStartX;
-    if (Math.abs(dx) > 40) go(dx < 0 ? 1 : -1);
-  });
+  const stageEl = document.getElementById('stage');
+
+  stageEl.addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+
+  stageEl.addEventListener('touchend', e => {
+    lastTouchTime = Date.now();
+    const endX = e.changedTouches[0].clientX;
+    const dx = endX - touchStartX;
+    if (Math.abs(dx) > 40) {
+      go(dx < 0 ? 1 : -1); // swipe
+    } else {
+      // tap: converter clientX para metade do stage visível
+      const rect = stageEl.getBoundingClientRect();
+      go(touchStartX - rect.left < rect.width / 2 ? -1 : 1);
+    }
+  }, { passive: true });
 
   function enterPresent() {
     const el = document.documentElement;
