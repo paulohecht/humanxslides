@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ztgrowth — hello</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Guia de marca ztgrowth: Roxo Neon #7B2CFF, Laranja #FF5A2C, texto #0A0A0A, fundo apoio #F5F5F5 — Space Grotesk (títulos), Inter (textos) */
+    :root {
+      --brand-purple: #7b2cff;
+      --brand-orange: #ff5a2c;
+      --text: #0a0a0a;
+      --bg: #f5f5f5;
+      --muted: rgba(10, 10, 10, 0.52);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(ellipse 90% 70% at 85% 15%, rgba(123, 44, 255, 0.09) 0%, transparent 50%),
+        radial-gradient(ellipse 70% 60% at 10% 90%, rgba(255, 90, 44, 0.07) 0%, transparent 45%);
+      color: var(--text);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100dvh;
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 2rem;
+      max-width: 90vw;
+    }
+
+    .label {
+      font-family: Inter, system-ui, sans-serif;
+      font-size: clamp(0.75rem, 2vw, 0.85rem);
+      font-weight: 500;
+      letter-spacing: 0.28em;
+      text-transform: lowercase;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+      animation: floaty 6s ease-in-out infinite;
+    }
+
+    .hello {
+      font-family: "Space Grotesk", Inter, system-ui, sans-serif;
+      font-size: clamp(2.5rem, 10vw, 5rem);
+      font-weight: 700;
+      line-height: 1.15;
+      min-height: 1.2em;
+    }
+
+    /* Gradiente no mesmo elemento do texto: background-clip em elemento pai + span com opacity quebra em Safari/WebKit. */
+    #phrase {
+      display: inline-block;
+      font-family: "Space Grotesk", Inter, system-ui, sans-serif;
+      background: linear-gradient(135deg, var(--brand-purple) 0%, var(--brand-orange) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      filter: drop-shadow(0 4px 24px rgba(123, 44, 255, 0.22));
+      opacity: 0;
+      transform: translateY(12px) scale(0.98);
+      transition:
+        opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    #phrase.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .lang {
+      font-family: Inter, system-ui, sans-serif;
+      margin-top: 1.5rem;
+      font-size: clamp(0.8rem, 2.2vw, 1rem);
+      font-weight: 400;
+      color: var(--muted);
+      min-height: 1.5em;
+    }
+
+    .brand {
+      position: fixed;
+      bottom: 1.25rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: rgba(10, 10, 10, 0.35);
+      z-index: 1;
+    }
+
+    .dots {
+      display: flex;
+      gap: 0.4rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .dots i {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--muted);
+      opacity: 0.35;
+      transition: opacity 0.3s, transform 0.3s, background 0.3s;
+    }
+
+    .dots i.on {
+      opacity: 1;
+      background: linear-gradient(135deg, var(--brand-purple), var(--brand-orange));
+      transform: scale(1.25);
+    }
+
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="label">hello world</p>
+    <h1 class="hello" aria-live="polite">
+      <span id="phrase" class="visible">Hello</span>
+    </h1>
+    <p class="lang" id="langName">English</p>
+    <div class="dots" id="dots" aria-hidden="true"></div>
+  </main>
+  <p class="brand" aria-hidden="true">ztgrowth</p>
+
+  <script>
+    (function () {
+      const greetings = [
+        { text: "Hello", lang: "English" },
+        { text: "Olá", lang: "Português" },
+        { text: "Hola", lang: "Español" },
+        { text: "Bonjour", lang: "Français" },
+        { text: "Hallo", lang: "Deutsch" },
+        { text: "Ciao", lang: "Italiano" },
+        { text: "Привет", lang: "Русский" },
+        { text: "你好", lang: "中文" },
+        { text: "こんにちは", lang: "日本語" },
+        { text: "안녕하세요", lang: "한국어" },
+        { text: "مرحبا", lang: "العربية" },
+        { text: "नमस्ते", lang: "हिन्दी" },
+        { text: "Hej", lang: "Svenska" },
+        { text: "Γεια σας", lang: "Ελληνικά" },
+        { text: "Shalom", lang: "עברית" },
+      ];
+
+      const phraseEl = document.getElementById("phrase");
+      const langEl = document.getElementById("langName");
+      const dotsEl = document.getElementById("dots");
+
+      greetings.forEach(function () {
+        var d = document.createElement("i");
+        dotsEl.appendChild(d);
+      });
+
+      var i = 0;
+      var dotItems = dotsEl.querySelectorAll("i");
+
+      function setDot(n) {
+        for (var k = 0; k < dotItems.length; k++) {
+          dotItems[k].classList.toggle("on", k === n);
+        }
+      }
+
+      function show(n) {
+        var item = greetings[n];
+        phraseEl.classList.remove("visible");
+        window.setTimeout(function () {
+          phraseEl.textContent = item.text;
+          langEl.textContent = item.lang;
+          phraseEl.classList.add("visible");
+          setDot(n);
+        }, 280);
+      }
+
+      function next() {
+        i = (i + 1) % greetings.length;
+        show(i);
+      }
+
+      setDot(0);
+      window.setInterval(next, 2200);
+    })();
+  </script>
+</body>
+</html>
